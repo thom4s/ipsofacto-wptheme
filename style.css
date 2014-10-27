@@ -386,6 +386,10 @@ and Blueprint http://www.blueprintcss.org/
   .entry-aside .widget:nth-child(2n) {
     background-color: #c5c5c5; }
 
+.gray-col {
+  background-color: #f6f6f6;
+  padding-top: 20px; }
+
 #page {
   /* Acceptable values are border, content, and padding - content is the default W3C model */
   box-sizing: border-box;
@@ -419,10 +423,10 @@ and Blueprint http://www.blueprintcss.org/
 .entry-excerpt {
   margin-top: 50px; }
 
-.entry-content {
+.entry-content:not(.gray-col) {
   margin-top: 20px; }
-  .entry-content:not(.plain) {
-    padding-left: 20px; }
+.entry-content:not(.plain) {
+  padding-left: 20px; }
 
 .site-footer {
   /* Acceptable values are border, content, and padding - content is the default W3C model */

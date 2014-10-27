@@ -1,6 +1,6 @@
 @import "layout/grid";
 @import "layout/sidebar";
-
+@import "layout/content";
 
 #page {
   @include box-sizing;
@@ -38,7 +38,10 @@
     }
 
     .entry-content {
-      margin-top: $baselineheight;
+
+      &:not(.gray-col) {
+        margin-top: $baselineheight;
+      }  
 
       &:not(.plain) {
         padding-left: $baselineheight;
