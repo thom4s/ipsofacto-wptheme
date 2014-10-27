@@ -43,6 +43,7 @@ and Blueprint http://www.blueprintcss.org/
 	12.1 Captions
 	12.2 Galleries
 --------------------------------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300);
 /* 
  * Grid system
  * 
@@ -467,12 +468,14 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Arial", Hevetica, sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bold;
   clear: both; }
 
 p {
