@@ -42,7 +42,8 @@ function ipsofacto_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'ipsofacto' ),
+		'primary' => __( 'Menu principal', 'ipsofacto' ),
+		'secondary' => __( 'Menu footer', 'ipsofacto' ),
 	) );
 
 	/*
@@ -85,8 +86,19 @@ function ipsofacto_widgets_init() {
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
+	register_sidebar( array(
+		'name'          => __( 'Sidebar Accueil', 'ipsofacto' ),
+		'id'            => 'sidebar-hp',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+
 }
 add_action( 'widgets_init', 'ipsofacto_widgets_init' );
+
 
 /**
  * Enqueue scripts and styles.
@@ -104,15 +116,21 @@ function ipsofacto_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'ipsofacto_scripts' );
 
+
 /**
- * Implement the Custom Header feature.
+ * PostTypes
  */
-//require get_template_directory() . '/inc/custom-header.php';
+require get_template_directory() . '/inc/pt-team.php';
+
+/**
+ * MetaBoxes
+ */
+require get_template_directory() . '/inc/metaboxes.php';
 
 /**
  * Custom template tags for this theme.
  */
-require get_template_directory() . '/inc/template-tags.php';
+// require get_template_directory() . '/inc/template-tags.php';
 
 /**
  * Custom functions that act independently of the theme templates.
