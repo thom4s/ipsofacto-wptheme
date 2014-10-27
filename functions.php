@@ -137,12 +137,12 @@ require get_template_directory() . '/inc/metaboxes.php';
 function getposts( $atts ){
 	
 	$a = shortcode_atts( array(
-  	'post' 		=> 'team',
-  	'display'	=> 'liste'
+  	'contenu' 		=> '',
+  	'format'			=> 'simple'
   ), $atts );
 
 	$args = array(
-		'post_type' 			=> $a['post'],
+		'post_type' 			=> $a['contenu'],
 		'posts_per_page'	=> -1,
 	);
 
@@ -151,8 +151,8 @@ function getposts( $atts ){
 
 	// The Loop
 	if ( $the_query->have_posts() ) {
-		switch ($a['display']) {
-		    case 'liste':
+		switch ($a['format']) {
+		    case 'simple':
 		        echo '<ul class="serial-list">';
 						while ( $the_query->have_posts() ) {
 							$the_query->the_post(); ?>
@@ -185,7 +185,7 @@ function getposts( $atts ){
 	}
 	wp_reset_postdata();
 }
-add_shortcode( 'getposts', 'getposts' );
+add_shortcode( 'lister', 'getposts' );
 
 
 
