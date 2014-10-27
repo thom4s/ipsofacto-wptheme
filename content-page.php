@@ -7,23 +7,26 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+	<header class="entry-header row">
 
 		
 	</header><!-- .entry-header -->
 
-  <div class="entry-aside">
-    
-    
+  <div class="row">
+    <div class="entry-aside l-2col">
+      <?php echo rwmb_meta( 'ipsofacto_wysiwyg' ); ?>
+      
 
-  </div><!-- .entry-aside -->
+    </div><!-- .entry-aside -->
 
-	<div class="entry-content">
-    
-    <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+    <div class="entry-content l-3col last">
+      
+      <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-		<?php the_content(); ?>
+      <?php the_content(); ?>
 
-	</div><!-- .entry-content -->
+    </div><!-- .entry-content -->
+  </div><!-- .row -->
+
 
 </article><!-- #post-## -->
