@@ -1,4 +1,5 @@
 @import "layout/grid";
+@import "layout/sidebar-content";
 
 
 #page {
@@ -26,15 +27,19 @@
     .entry-header {
       height: 250px;
       background-color: $gray;
-      margin-bottom: $baselineheight;
     }
+
+      .entry-excerpt {
+        margin-top: 50px;
+      }
 
     .entry-aside {
       
     }
 
     .entry-content {
-      
+      padding-left: $baselineheight;
+      margin-top: $baselineheight;
     }    
 
   .site-footer {
