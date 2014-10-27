@@ -1,5 +1,5 @@
 @import "layout/grid";
-@import "layout/sidebar-content";
+@import "layout/sidebar";
 
 
 #page {
@@ -39,7 +39,7 @@
 
     .entry-content {
       margin-top: $baselineheight;
-      
+
       &:not(.plain) {
         padding-left: $baselineheight;
       }

@@ -548,6 +548,15 @@ h2 {
   font-size: 2rem;
   margin-bottom: 20px; }
 
+.plain h1 {
+  margin-left: 20px; }
+
+h3 {
+  font-size: 18px;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: black; }
+
 .entry-excerpt {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 24px;
@@ -643,6 +652,33 @@ dt {
 
 dd {
   margin: 0 1.5em 1.5em; }
+
+.team__blocks {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .team__blocks li {
+    /* Acceptable values are border, content, and padding - content is the default W3C model */
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 32%;
+    height: 200px;
+    margin-right: 2%;
+    margin-bottom: 20px;
+    padding: 20px 15px;
+    float: left;
+    background-color: #ececec;
+    color: #6f6f6e; }
+    .team__blocks li:nth-child(3n+3) {
+      margin-right: 0; }
+    .team__blocks li p {
+      margin: 0; }
+
+.team__list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
 
 img {
   height: auto;
@@ -781,11 +817,13 @@ textarea {
 5.1 Links
 --------------------------------------------------------------*/
 a {
-  color: #9c1614; }
+  color: #9c1614;
+  text-decoration: none; }
   a:visited {
     color: #9c1614; }
   a:hover, a:focus, a:active {
-    color: black; }
+    color: #c20e1a;
+    border-bottom: 1px dotted #c20e1a; }
 
 /*--------------------------------------------------------------
 5.2 Menus

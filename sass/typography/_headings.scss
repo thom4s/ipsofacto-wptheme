@@ -12,8 +12,16 @@ h2 {
   margin-bottom: $baselineheight;
 }
 
-h3 {
+.plain {
+  h1 {
+    margin-left: $baselineheight;
+  }
+}
 
+h3 {
+  @include font-size(1.8);
+  margin-bottom: $baselineheight;
+  color: $black;
 }
 
 .entry-excerpt {

@@ -160,11 +160,17 @@ function getposts( $atts ){
 						echo '</ul>';
 		        break;
 		    case 'blocks':
-		        echo '<ul>';
+		        echo '<ul class="team__blocks">';
 						while ( $the_query->have_posts() ) {
-							$the_query->the_post();
-							echo '<li>' . get_the_title() . '</li>';
-						}
+							$the_query->the_post(); ?>
+
+							<li class="">
+								<h3><?php the_title(); ?></h3>
+								<?php the_content(); ?>
+								<a href="mailto:<?php echo rwmb_meta( 'ipsofacto_email' ); ?>"><?php echo rwmb_meta( 'ipsofacto_email' ); ?></a>
+							</li>
+
+						<?php }
 						echo '</ul>';
 		        break;
 		}

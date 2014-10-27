@@ -8,7 +8,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-  <?php if( has_post_thumbnail() && ( get_the_excerpt() != '') ){ ?>
+  <?php if( has_post_thumbnail() || ( get_the_excerpt() != '') ){ ?>
     <header class="entry-header row">
 
       <div class="thumbnail first l-3col first">

@@ -23,3 +23,43 @@ dt {
 dd {
 	margin: 0 1.5em 1.5em;
 }
+
+
+// SPECIAL LISTS
+
+.team__blocks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    @include box-sizing;
+    width: 32%;
+    height: 200px;
+    margin-right: 2%;
+    margin-bottom: $baselineheight;
+    padding: 20px 15px;
+    float: left;
+    background-color: $gray__light;
+    color:$gray__darker;
+
+    &:nth-child(3n+3){
+      margin-right: 0;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.team__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+
+    
+  }
+}
