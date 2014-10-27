@@ -1,0 +1,25 @@
+@import "layout/grid";
+
+
+#page {
+  @include box-sizing;
+  width:  $size__site-main;
+  margin: auto;
+
+  @include up-to(large){
+    width: 100%;
+  }
+}
+
+  .site-header {
+    @include box-sizing;
+  }
+
+  .site-content {
+    @include box-sizing;
+  }
+    
+
+  .site-footer {
+    @include box-sizing;
+  }

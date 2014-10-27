@@ -11,11 +11,9 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'ipsofacto' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'ipsofacto' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'ipsofacto' ), 'ipsofacto', '<a href="http://thomasflorentin.net" rel="designer">Thomas Florentin</a>' ); ?>
-		</div><!-- .site-info -->
+    <nav  id="site-navigation" class="secondary-navigation" role="navigation">
+      <?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); ?>
+    </nav><!-- #site-navigation -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
