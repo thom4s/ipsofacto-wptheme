@@ -1,2 +1,8 @@
-$size__site-main: 100%;
-$size__site-sidebar: 25%;
+$size__site-main:       100%;
+$size__site-gutter:     0;
+$size__site-cols:       5;
+
+$minimal_breakpoint:    320px !default;
+$medium_breakpoint:     760px !default;
+$large_breakpoint:      980px !default;
+$wide_breakpoint:       1200px !default;

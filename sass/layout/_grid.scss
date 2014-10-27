@@ -1,0 +1,75 @@
+/* 
+ * Grid system
+ * 
+ * @package sasskit
+ */
+
+
+
+$one_col: (100% - ($size__site-gutter * ($size__site-cols - 1))) / $size__site-cols;
+
+
+/* 
+ * Mixins for the grid to be 
+ */
+@mixin cols($num) {
+    @include box-sizing();
+    width: ($one_col * $num) + ($size__site-gutter * ($num - 1));
+    border: 1px solid;
+}
+ 
+@mixin sub_cols($num_child, $num_parent) {
+    $parent_size: ($one_col * $num_parent) + ($size__site-gutter * ($num_parent - 1));
+    $child_size: ($one_col * $num_child) + ($size__site-gutter * ($num_child - 1));
+    margin-left: ($size__site-gutter / $parent_size) * 100%;
+    width: ($child_size / $parent_size) * 100%;
+}
+
+@mixin parse-columns($suffix: ''){
+    .row {
+        @for $i from 1 through $size__site-cols {
+            .#{$suffix}-#{$i}col {
+                @include cols($i);
+                float: left;
+                margin-left: $size__site-gutter;
+
+                @for $j from 1 through ($i - 1) {
+                    .#{$suffix}-#{$j}col {
+                        @include sub_cols($j, $i);
+                    }
+                }
+            }
+            .#{$suffix}-#{$i}col-push { left: $i / $size__site-cols * 100%; }
+            .#{$suffix}-#{$i}col-pull { right: $i / $size__site-cols * 100%; }
+        }
+        .#{$suffix}-hide { display: none; }
+        .#{$suffix}-show { display: block; }
+        .#{$suffix}-first { margin-left: 0 !important; }
+        .#{$suffix}-last { float: right !important; }
+    }
+}
+
+.row {
+    @include clearfix;
+
+    > :first-child, 
+    .row > :first-child { 
+        margin-left: 0 !important;
+    }
+}
+
+
+
+/* 
+ * COLUMNS & NESTED COLUMNS
+ */
+
+@include parse-columns('l');
+
+@include up-to(large) {
+    @include parse-columns('m');
+}
+@include up-to(medium) {
+    @include parse-columns('s');
+}
+

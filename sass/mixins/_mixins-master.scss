@@ -34,3 +34,39 @@
 @mixin clearfix-after() {
 	clear: both;
 }
+
+// Responsive Breakpoints
+@mixin at-least($point) {
+  @if $point == wide {
+    @media (min-width: $wide_breakpoint) { @content; }
+  }
+  @else if $point == large {
+    @media (min-width: $large_breakpoint) { @content; }
+  }
+  @else if $point == medium {
+    @media (min-width: $medium_breakpoint) { @content; }
+  }
+  @else if $point == minimal {
+    @media (min-width: $minimal_breakpoint) { @content; }
+  }  
+}
+
+@mixin up-to($point) {
+  @if $point == wide {
+    @media (max-width: $wide_breakpoint) { @content; }
+  }
+  @else if $point == large {
+    @media (max-width: $large_breakpoint) { @content; }
+  }
+  @else if $point == medium {
+    @media (max-width: $medium_breakpoint) { @content; }
+  }
+}
+
+// Box-sizing
+@mixin box-sizing($type: "border") {
+  /* Acceptable values are border, content, and padding - content is the default W3C model */ 
+  box-sizing: #{$type}-box;
+  -webkit-box-sizing: #{$type}-box;
+  -moz-box-sizing: #{$type}-box;
+}
