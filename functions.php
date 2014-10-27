@@ -121,6 +121,7 @@ add_action( 'wp_enqueue_scripts', 'ipsofacto_scripts' );
  * PostTypes
  */
 require get_template_directory() . '/inc/pt-team.php';
+require get_template_directory() . '/inc/pt-job.php';
 
 /**
  * MetaBoxes
@@ -130,7 +131,7 @@ require get_template_directory() . '/inc/metaboxes.php';
 /**
  * Custom template tags for this theme.
  */
-// require get_template_directory() . '/inc/template-tags.php';
+require get_template_directory() . '/inc/template-tags.php';
 
 /**
  * Custom functions that act independently of the theme templates.
