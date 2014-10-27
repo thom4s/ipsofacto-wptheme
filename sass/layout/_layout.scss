@@ -14,12 +14,28 @@
   .site-header {
     @include box-sizing;
     border-bottom: 2px solid $red;
+    width: 100%;
+    float: left;
   }
 
   .site-content {
     @include box-sizing;
+
   }
 
+    .entry-header {
+      height: 250px;
+      background-color: $gray;
+      margin-bottom: $baselineheight;
+    }
+
+    .entry-aside {
+      
+    }
+
+    .entry-content {
+      
+    }    
 
   .site-footer {
     @include box-sizing;

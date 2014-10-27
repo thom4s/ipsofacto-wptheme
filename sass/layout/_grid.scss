@@ -15,7 +15,6 @@ $one_col: (100% - ($size__site-gutter * ($size__site-cols - 1))) / $size__site-c
 @mixin cols($num) {
     @include box-sizing();
     width: ($one_col * $num) + ($size__site-gutter * ($num - 1));
-    border: 1px solid;
 }
  
 @mixin sub_cols($num_child, $num_parent) {
@@ -55,6 +54,10 @@ $one_col: (100% - ($size__site-gutter * ($size__site-cols - 1))) / $size__site-c
     > :first-child, 
     .row > :first-child { 
         margin-left: 0 !important;
+    }
+    .last {
+        margin-left: 0 !important;
+        float: right !important;
     }
 }
 

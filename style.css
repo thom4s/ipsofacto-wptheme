@@ -53,11 +53,24 @@ and Blueprint http://www.blueprintcss.org/
  * Mixins for the grid to be 
  */
 .row {
-  content: "";
-  display: table; }
+  clear: both; }
+  .row:before, .row:after {
+    content: " ";
+    display: table; }
+  .row:after {
+    display: block;
+    clear: both;
+    height: 1px;
+    margin-top: -1px;
+    visibility: hidden; }
+  .row {
+    *zoom: 1; }
   .row > :first-child,
   .row .row > :first-child {
     margin-left: 0 !important; }
+  .row .last {
+    margin-left: 0 !important;
+    float: right !important; }
 
 /* 
  * COLUMNS & NESTED COLUMNS
@@ -68,7 +81,6 @@ and Blueprint http://www.blueprintcss.org/
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   width: 20%;
-  border: 1px solid;
   float: left;
   margin-left: 0; }
 .row .l-1col-push {
@@ -81,7 +93,6 @@ and Blueprint http://www.blueprintcss.org/
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   width: 40%;
-  border: 1px solid;
   float: left;
   margin-left: 0; }
   .row .l-2col .l-1col {
@@ -97,7 +108,6 @@ and Blueprint http://www.blueprintcss.org/
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   width: 60%;
-  border: 1px solid;
   float: left;
   margin-left: 0; }
   .row .l-3col .l-1col {
@@ -116,7 +126,6 @@ and Blueprint http://www.blueprintcss.org/
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   width: 80%;
-  border: 1px solid;
   float: left;
   margin-left: 0; }
   .row .l-4col .l-1col {
@@ -138,7 +147,6 @@ and Blueprint http://www.blueprintcss.org/
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   width: 100%;
-  border: 1px solid;
   float: left;
   margin-left: 0; }
   .row .l-5col .l-1col {
@@ -173,7 +181,6 @@ and Blueprint http://www.blueprintcss.org/
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     width: 20%;
-    border: 1px solid;
     float: left;
     margin-left: 0; }
   .row .m-1col-push {
@@ -186,7 +193,6 @@ and Blueprint http://www.blueprintcss.org/
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     width: 40%;
-    border: 1px solid;
     float: left;
     margin-left: 0; }
     .row .m-2col .m-1col {
@@ -202,7 +208,6 @@ and Blueprint http://www.blueprintcss.org/
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     width: 60%;
-    border: 1px solid;
     float: left;
     margin-left: 0; }
     .row .m-3col .m-1col {
@@ -221,7 +226,6 @@ and Blueprint http://www.blueprintcss.org/
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     width: 80%;
-    border: 1px solid;
     float: left;
     margin-left: 0; }
     .row .m-4col .m-1col {
@@ -243,7 +247,6 @@ and Blueprint http://www.blueprintcss.org/
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     width: 100%;
-    border: 1px solid;
     float: left;
     margin-left: 0; }
     .row .m-5col .m-1col {
@@ -277,7 +280,6 @@ and Blueprint http://www.blueprintcss.org/
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     width: 20%;
-    border: 1px solid;
     float: left;
     margin-left: 0; }
   .row .s-1col-push {
@@ -290,7 +292,6 @@ and Blueprint http://www.blueprintcss.org/
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     width: 40%;
-    border: 1px solid;
     float: left;
     margin-left: 0; }
     .row .s-2col .s-1col {
@@ -306,7 +307,6 @@ and Blueprint http://www.blueprintcss.org/
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     width: 60%;
-    border: 1px solid;
     float: left;
     margin-left: 0; }
     .row .s-3col .s-1col {
@@ -325,7 +325,6 @@ and Blueprint http://www.blueprintcss.org/
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     width: 80%;
-    border: 1px solid;
     float: left;
     margin-left: 0; }
     .row .s-4col .s-1col {
@@ -347,7 +346,6 @@ and Blueprint http://www.blueprintcss.org/
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     width: 100%;
-    border: 1px solid;
     float: left;
     margin-left: 0; }
     .row .s-5col .s-1col {
@@ -390,13 +388,20 @@ and Blueprint http://www.blueprintcss.org/
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  border-bottom: 2px solid #c20e1a; }
+  border-bottom: 2px solid #c20e1a;
+  width: 100%;
+  float: left; }
 
 .site-content {
   /* Acceptable values are border, content, and padding - content is the default W3C model */
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box; }
+
+.entry-header {
+  height: 250px;
+  background-color: #c5c5c5;
+  margin-bottom: 20px; }
 
 .site-footer {
   /* Acceptable values are border, content, and padding - content is the default W3C model */
@@ -499,8 +504,8 @@ select,
 textarea {
   color: #404040;
   font-family: Arial, Hevetica, sans-serif;
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 1.5; }
 
 .main-navigation {
@@ -513,6 +518,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans Condensed", sans-serif;
   font-weight: bold;
   clear: both; }
+
+h1 {
+  text-transform: uppercase;
+  color: #9c1614;
+  font-size: 20px;
+  font-size: 2rem; }
 
 p {
   margin-bottom: 1.5em; }
@@ -796,6 +807,42 @@ a {
     background: #9c1614;
     color: #fff; }
 
+.secondary-navigation {
+  /* Acceptable values are border, content, and padding - content is the default W3C model */
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+  .secondary-navigation ul {
+    display: block;
+    list-style: none;
+    text-align: center;
+    font-size: 12px;
+    font-size: 1.2rem;
+    margin: 0;
+    width: 300px;
+    position: relative;
+    float: none;
+    margin: auto; }
+  .secondary-navigation li {
+    float: left;
+    position: relative;
+    padding: 0 15px;
+    border-right: 1px solid #c5c5c5;
+    line-height: 8px;
+    line-height: 0.8rem; }
+    .secondary-navigation li:last-child {
+      border: none; }
+  .secondary-navigation a {
+    display: block;
+    text-decoration: none;
+    padding: 5px 15px;
+    color: #9c9b9b; }
+  .secondary-navigation .current_page_item > a,
+  .secondary-navigation .current-menu-item > a,
+  .secondary-navigation .current_page_ancestor > a {
+    background: #9c1614;
+    color: #fff; }
+
 /* Small menu */
 .menu-toggle {
   display: none; }
@@ -891,8 +938,62 @@ a {
 .site-content:after,
 .site-footer:before,
 .site-footer:after {
-  content: "";
-  display: table; }
+  clear: both; }
+  .clear:before:before, .clear:before:after,
+  .clear:after:before,
+  .clear:after:after,
+  .entry-content:before:before,
+  .entry-content:before:after,
+  .entry-content:after:before,
+  .entry-content:after:after,
+  .comment-content:before:before,
+  .comment-content:before:after,
+  .comment-content:after:before,
+  .comment-content:after:after,
+  .site-header:before:before,
+  .site-header:before:after,
+  .site-header:after:before,
+  .site-header:after:after,
+  .site-content:before:before,
+  .site-content:before:after,
+  .site-content:after:before,
+  .site-content:after:after,
+  .site-footer:before:before,
+  .site-footer:before:after,
+  .site-footer:after:before,
+  .site-footer:after:after {
+    content: " ";
+    display: table; }
+  .clear:before:after,
+  .clear:after:after,
+  .entry-content:before:after,
+  .entry-content:after:after,
+  .comment-content:before:after,
+  .comment-content:after:after,
+  .site-header:before:after,
+  .site-header:after:after,
+  .site-content:before:after,
+  .site-content:after:after,
+  .site-footer:before:after,
+  .site-footer:after:after {
+    display: block;
+    clear: both;
+    height: 1px;
+    margin-top: -1px;
+    visibility: hidden; }
+  .clear:before,
+  .clear:after,
+  .entry-content:before,
+  .entry-content:after,
+  .comment-content:before,
+  .comment-content:after,
+  .site-header:before,
+  .site-header:after,
+  .site-content:before,
+  .site-content:after,
+  .site-footer:before,
+  .site-footer:after {
+    *zoom: 1; }
 
 .clear:after,
 .entry-content:after,
@@ -901,77 +1002,6 @@ a {
 .site-content:after,
 .site-footer:after {
   clear: both; }
-
-/*--------------------------------------------------------------
-9.0 Widgets
---------------------------------------------------------------*/
-.widget {
-  margin: 0 0 1.5em;
-  /* Make sure select elements fit in widgets */ }
-  .widget select {
-    max-width: 100%; }
-
-/* Search widget */
-.widget_search .search-submit {
-  display: none; }
-
-/*--------------------------------------------------------------
-10.0 Content
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-10.1 Posts and pages
---------------------------------------------------------------*/
-.sticky {
-  display: block; }
-
-.hentry {
-  margin: 0 0 1.5em; }
-
-.byline,
-.updated:not(.published) {
-  display: none; }
-
-.single .byline,
-.group-blog .byline {
-  display: inline; }
-
-.page-content,
-.entry-content,
-.entry-summary {
-  margin: 1.5em 0 0; }
-
-.page-links {
-  clear: both;
-  margin: 0 0 1.5em; }
-
-/*--------------------------------------------------------------
-10.2 Asides
---------------------------------------------------------------*/
-.blog .format-aside .entry-title,
-.archive .format-aside .entry-title {
-  display: none; }
-
-/*--------------------------------------------------------------
-10.3 Comments
---------------------------------------------------------------*/
-.comment-content a {
-  word-wrap: break-word; }
-
-.bypostauthor {
-  display: block; }
-
-/*--------------------------------------------------------------
-11.0 Infinite scroll
---------------------------------------------------------------*/
-/* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll .paging-navigation,
-.infinite-scroll.neverending .site-footer {
-  /* Theme Footer (when set to scrolling) */
-  display: none; }
-
-/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
-.infinity-end.neverending .site-footer {
-  display: block; }
 
 /*--------------------------------------------------------------
 12.0 Media
