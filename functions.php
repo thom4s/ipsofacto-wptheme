@@ -139,12 +139,13 @@ function getposts( $atts ){
 	
 	$a = shortcode_atts( array(
   	'contenu' 		=> '',
-  	'format'			=> 'simple'
+  	'format'			=> 'simple',
+  	'combien'			=> -1,
   ), $atts );
 
 	$args = array(
 		'post_type' 			=> $a['contenu'],
-		'posts_per_page'	=> -1,
+		'posts_per_page'	=> $a['combien'],
 	);
 
 	// The Query
@@ -153,6 +154,15 @@ function getposts( $atts ){
 	// The Loop
 	if ( $the_query->have_posts() ) {
 		switch ($a['format']) {
+		    case 'brute':
+						while ( $the_query->have_posts() ) {
+							$the_query->the_post(); ?>
+						
+								<h4><?php the_title(); ?></h4>
+								<?php the_content(); ?>
+						
+						<?php }
+		        break;
 		    case 'simple':
 		        echo '<ul class="serial-list">';
 						while ( $the_query->have_posts() ) {
@@ -165,7 +175,7 @@ function getposts( $atts ){
 						
 						<?php }
 						echo '</ul>';
-		        break;
+		        break;		        
 		    case 'blocks':
 		        echo '<ul class="serial-blocks">';
 						while ( $the_query->have_posts() ) {

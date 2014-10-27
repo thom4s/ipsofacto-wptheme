@@ -25,7 +25,7 @@
 		
 		<div class="site-branding">
 			<img src="<?php bloginfo( 'template_directory'); ?>/img/IF_logo.png" class="site-logo">
-			<img src="<?php bloginfo( 'template_directory'); ?>/img/IF_enveloppe_gris.png" class="site-contact">
+			<a href="<?php bloginfo( 'url'); ?>/contact"><img src="<?php bloginfo( 'template_directory'); ?>/img/IF_enveloppe_gris.png" class="site-contact"></a>
 		</div>
 
 
