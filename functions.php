@@ -126,6 +126,7 @@ add_action( 'wp_enqueue_scripts', 'ipsofacto_scripts' );
  */
 require get_template_directory() . '/inc/pt-team.php';
 require get_template_directory() . '/inc/pt-job.php';
+require get_template_directory() . '/inc/pt-interventions.php';
 
 /**
  * MetaBoxes
@@ -137,7 +138,7 @@ function getposts( $atts ){
 	
 	$a = shortcode_atts( array(
   	'post' 		=> 'team',
-  	'display'	=> 'list'
+  	'display'	=> 'liste'
   ), $atts );
 
 	$args = array(
@@ -151,16 +152,21 @@ function getposts( $atts ){
 	// The Loop
 	if ( $the_query->have_posts() ) {
 		switch ($a['display']) {
-		    case 'list':
-		        echo '<ul>';
+		    case 'liste':
+		        echo '<ul class="serial-list">';
 						while ( $the_query->have_posts() ) {
-							$the_query->the_post();
-							echo '<li>' . get_the_title() . '</li>';
-						}
+							$the_query->the_post(); ?>
+						
+							<li> 
+								<h4><?php the_title(); ?></h4>
+								<?php the_content(); ?>
+							</li>
+						
+						<?php }
 						echo '</ul>';
 		        break;
 		    case 'blocks':
-		        echo '<ul class="team__blocks">';
+		        echo '<ul class="serial-blocks">';
 						while ( $the_query->have_posts() ) {
 							$the_query->the_post(); ?>
 

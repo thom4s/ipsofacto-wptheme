@@ -557,6 +557,11 @@ h3 {
   margin-bottom: 20px;
   color: black; }
 
+h4 {
+  color: black;
+  font-size: 16px;
+  font-size: 1.6rem; }
+
 .entry-excerpt {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 24px;
@@ -653,32 +658,35 @@ dt {
 dd {
   margin: 0 1.5em 1.5em; }
 
-.team__blocks {
+.serial-blocks, .serial-list {
   list-style: none;
   margin: 0;
   padding: 0; }
-  .team__blocks li {
-    /* Acceptable values are border, content, and padding - content is the default W3C model */
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    width: 32%;
-    height: 200px;
-    margin-right: 2%;
+  .serial-blocks li, .serial-list li {
     margin-bottom: 20px;
-    padding: 20px 15px;
-    float: left;
-    background-color: #ececec;
-    color: #6f6f6e; }
-    .team__blocks li:nth-child(3n+3) {
-      margin-right: 0; }
-    .team__blocks li p {
-      margin: 0; }
+    float: left; }
+  .serial-blocks p, .serial-list p {
+    margin: 0; }
 
-.team__list {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
+.serial-blocks li {
+  /* Acceptable values are border, content, and padding - content is the default W3C model */
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 32%;
+  height: 200px;
+  margin-right: 2%;
+  padding: 20px 15px;
+  background-color: #ececec;
+  color: #6f6f6e; }
+  .serial-blocks li:nth-child(3n+3) {
+    margin-right: 0; }
+
+.serial-list li {
+  width: 48%;
+  margin-right: 2%; }
+  .serial-list li:nth-child(2n+2) {
+    margin-right: 0; }
 
 img {
   height: auto;
@@ -878,6 +886,8 @@ a {
     border-right: 1px solid #c5c5c5; }
     .main-navigation li:last-child {
       border: none; }
+    .main-navigation li:hover > a {
+      border: none; }
   .main-navigation a {
     display: block;
     width: 130px;
@@ -915,6 +925,8 @@ a {
     line-height: 8px;
     line-height: 0.8rem; }
     .secondary-navigation li:last-child {
+      border: none; }
+    .secondary-navigation li:hover > a {
       border: none; }
   .secondary-navigation a {
     display: block;
