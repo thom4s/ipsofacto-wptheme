@@ -703,6 +703,10 @@ button,
 input,
 select,
 textarea {
+  /* Acceptable values are border, content, and padding - content is the default W3C model */
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   font-size: 100%;
   /* Corrects font size not being inherited in all browsers */
   margin: 0;
@@ -809,6 +813,17 @@ textarea {
   vertical-align: top;
   /* Improves readability and alignment in all browsers */
   width: 100%; }
+
+.wpcf7-form {
+  /* Acceptable values are border, content, and padding - content is the default W3C model */
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 50%;
+  margin: auto; }
+  .wpcf7-form input {
+    width: 100%;
+    margin-bottom: 10px; }
 
 /*--------------------------------------------------------------
 5.0 Navigation

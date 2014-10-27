@@ -25,7 +25,11 @@
   <div class="row">
 
     <div class="entry-aside l-2col">
-      <?php echo rwmb_meta( 'ipsofacto_wysiwyg' ); ?>    
+      <div class="widget">
+        <?php echo rwmb_meta( 'ipsofacto_wysiwyg' ); ?>   
+      </div>
+       
+    
     </div><!-- .entry-aside -->
 
     <div class="entry-content l-3col last">

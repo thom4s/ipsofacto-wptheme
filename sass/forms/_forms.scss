@@ -2,6 +2,7 @@ button,
 input,
 select,
 textarea {
+  @include box-sizing;
 	font-size: 100%; /* Corrects font size not being inherited in all browsers */
 	margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
 	vertical-align: baseline; /* Improves appearance and consistency in all browsers */
@@ -10,3 +11,16 @@ textarea {
 @import "buttons";
 
 @import "fields";
+
+
+.wpcf7-form {
+  @include box-sizing;
+
+  width: 50%;
+  margin: auto;
+
+  input {
+    width: 100%;
+    margin-bottom: $baselineheight / 2;
+  }
+}
