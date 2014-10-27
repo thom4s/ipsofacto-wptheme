@@ -1,13 +1,18 @@
-.main-navigation {
-	clear: both;
-	display: block;
+.site-branding {
 	float: left;
-	width: 100%;
+}
+
+.main-navigation {
+	display: inline-block;
+	float: left;
 
 	ul {
+		display: block;
+		float: right;
 		list-style: none;
-		margin: 0;
+		margin-top: 30px;
 		padding-left: 0;
+
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -46,18 +51,31 @@
 	li {
 		float: left;
 		position: relative;
+		padding: 0 15px;
+		border-right: 1px solid $gray;
+
+		&:last-child {
+			border: none;
+		}
 
 		&:hover > a {
 		}
 	}
 	a {
 		display: block;
+		width: 130px;
 		text-decoration: none;
+		padding: 5px 15px;
+		color: $gray__dark;
+		text-align: center;
+
 	}
 
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a {
+		background: $red__light;
+		color: #fff;
 	}
 }
 

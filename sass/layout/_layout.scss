@@ -13,12 +13,13 @@
 
   .site-header {
     @include box-sizing;
+    border-bottom: 2px solid $red;
   }
 
   .site-content {
     @include box-sizing;
   }
-    
+
 
   .site-footer {
     @include box-sizing;
