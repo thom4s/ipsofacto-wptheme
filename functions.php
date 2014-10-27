@@ -132,6 +132,52 @@ require get_template_directory() . '/inc/pt-job.php';
  */
 require get_template_directory() . '/inc/metaboxes.php';
 
+
+function getposts( $atts ){
+	
+	$a = shortcode_atts( array(
+  	'post' 		=> 'team',
+  	'display'	=> 'list'
+  ), $atts );
+
+	$args = array(
+		'post_type' 			=> $a['post'],
+		'posts_per_page'	=> -1,
+	);
+
+	// The Query
+	$the_query = new WP_Query( $args );
+
+	// The Loop
+	if ( $the_query->have_posts() ) {
+		switch ($a['display']) {
+		    case 'list':
+		        echo '<ul>';
+						while ( $the_query->have_posts() ) {
+							$the_query->the_post();
+							echo '<li>' . get_the_title() . '</li>';
+						}
+						echo '</ul>';
+		        break;
+		    case 'blocks':
+		        echo '<ul>';
+						while ( $the_query->have_posts() ) {
+							$the_query->the_post();
+							echo '<li>' . get_the_title() . '</li>';
+						}
+						echo '</ul>';
+		        break;
+		}
+	} else {
+		echo 'aucun résultat';
+	}
+	wp_reset_postdata();
+}
+add_shortcode( 'getposts', 'getposts' );
+
+
+
+
 /**
  * Custom template tags for this theme.
  */

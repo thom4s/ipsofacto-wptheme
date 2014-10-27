@@ -38,8 +38,11 @@
     }
 
     .entry-content {
-      padding-left: $baselineheight;
       margin-top: $baselineheight;
+      
+      &:not(.plain) {
+        padding-left: $baselineheight;
+      }
     }    
 
   .site-footer {

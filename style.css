@@ -420,8 +420,9 @@ and Blueprint http://www.blueprintcss.org/
   margin-top: 50px; }
 
 .entry-content {
-  padding-left: 20px;
   margin-top: 20px; }
+  .entry-content:not(.plain) {
+    padding-left: 20px; }
 
 .site-footer {
   /* Acceptable values are border, content, and padding - content is the default W3C model */
