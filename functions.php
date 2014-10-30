@@ -146,6 +146,7 @@ function getposts( $atts ){
 	$args = array(
 		'post_type' 			=> $a['contenu'],
 		'posts_per_page'	=> $a['combien'],
+		'order'						=> 'ASC'
 	);
 
 	// The Query
@@ -184,7 +185,6 @@ function getposts( $atts ){
 							<li class="">
 								<h3><?php the_title(); ?></h3>
 								<?php the_content(); ?>
-								<a href="mailto:<?php echo rwmb_meta( 'ipsofacto_email' ); ?>"><?php echo rwmb_meta( 'ipsofacto_email' ); ?></a>
 							</li>
 
 						<?php }

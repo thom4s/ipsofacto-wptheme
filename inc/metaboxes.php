@@ -32,6 +32,7 @@ function ipsofacto_register_meta_boxes( $meta_boxes )
   $prefix = 'ipsofacto_';
 
   // Metaboxes for team
+  /*
   $meta_boxes[] = array(
     'title' => __( 'informations complémentaires', 'meta-box' ),
     'pages' => array( 'team' ),
@@ -49,6 +50,7 @@ function ipsofacto_register_meta_boxes( $meta_boxes )
       ),      
     ),
   );
+  */
 
   // Metaboxes for pages
   $meta_boxes[] = array(
