@@ -579,7 +579,8 @@ p {
   margin-bottom: 1.5em; }
 
 b, strong {
-  font-weight: bold; }
+  font-weight: bold;
+  color: black; }
 
 dfn, cite, em, i {
   font-style: italic; }
@@ -662,6 +663,13 @@ dt {
 
 dd {
   margin: 0 1.5em 1.5em; }
+
+.fleches {
+  margin: 0;
+  list-style-image: url(img/IF_fleche_rouge.png);
+  color: #6f6f6e; }
+  .fleches li {
+    margin: 0 0 20px 20px; }
 
 .serial-blocks, .serial-list {
   list-style: none;
@@ -905,6 +913,8 @@ a {
     border-right: 1px solid #c5c5c5; }
     .main-navigation li:last-child {
       border: none; }
+    .main-navigation li:hover > a {
+      color: #c20e1a; }
   .main-navigation a {
     display: block;
     width: 130px;
@@ -917,6 +927,10 @@ a {
   .main-navigation .current_page_ancestor > a {
     background: #9c1614;
     color: #fff; }
+    .main-navigation .current_page_item > a:hover,
+    .main-navigation .current-menu-item > a:hover,
+    .main-navigation .current_page_ancestor > a:hover {
+      color: white; }
 
 .secondary-navigation {
   /* Acceptable values are border, content, and padding - content is the default W3C model */

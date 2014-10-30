@@ -81,6 +81,7 @@
 		}
 
 		&:hover > a {
+			color:$red;
 		}
 	}
 	a {
@@ -98,6 +99,10 @@
 	.current_page_ancestor > a {
 		background: $red__light;
 		color: #fff;
+
+		&:hover {
+			color: $white;
+		}
 	}
 }
 
