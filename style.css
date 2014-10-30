@@ -390,12 +390,17 @@ and Blueprint http://www.blueprintcss.org/
   background-color: #f6f6f6;
   padding-top: 20px; }
 
+html,
+body {
+  height: 100%; }
+
 #page {
   /* Acceptable values are border, content, and padding - content is the default W3C model */
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   width: 980px;
+  height: 100%;
   margin: auto; }
   @media (max-width: 980px) {
     #page {
@@ -415,7 +420,11 @@ and Blueprint http://www.blueprintcss.org/
   /* Acceptable values are border, content, and padding - content is the default W3C model */
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box; }
+  -moz-box-sizing: border-box;
+  min-height: 100%;
+  margin-bottom: -50px; }
+  .site-content img {
+    padding: 2% 0 0 3%; }
 
 .entry-header {
   height: 250px;
@@ -433,7 +442,9 @@ and Blueprint http://www.blueprintcss.org/
   /* Acceptable values are border, content, and padding - content is the default W3C model */
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box; }
+  -moz-box-sizing: border-box;
+  clear: both;
+  height: 50px; }
 
 /*--------------------------------------------------------------
 1.0 Reset
@@ -857,7 +868,7 @@ a {
   text-decoration: none; }
   a:visited {
     color: #9c1614; }
-  a:hover, a:focus, a:active {
+  a:hover {
     color: #c20e1a;
     border-bottom: 1px dotted #c20e1a; }
 
@@ -944,26 +955,22 @@ a {
     font-size: 12px;
     font-size: 1.2rem;
     margin: 0;
-    width: 300px;
-    position: relative;
-    float: none;
-    margin: auto; }
+    width: 100%; }
   .secondary-navigation li {
-    float: left;
-    position: relative;
-    padding: 0 15px;
+    display: inline;
+    padding: 0 3px 0 0;
     border-right: 1px solid #c5c5c5;
     line-height: 8px;
     line-height: 0.8rem; }
     .secondary-navigation li:last-child {
       border: none; }
     .secondary-navigation li:hover > a {
-      border: none; }
+      border: none;
+      color: #c20e1a; }
   .secondary-navigation a {
-    display: block;
     text-decoration: none;
-    padding: 5px 15px;
-    color: #9c9b9b; }
+    color: #9c9b9b;
+    padding: 0 5px; }
   .secondary-navigation .current_page_item > a,
   .secondary-navigation .current-menu-item > a,
   .secondary-navigation .current_page_ancestor > a {

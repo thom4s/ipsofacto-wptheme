@@ -5,9 +5,10 @@ a {
 	&:visited {
 		color: $color__link-visited;
 	}
-	&:hover,
 	&:focus,
 	&:active {
+	}
+	&:hover {
 		color: $color__link-hover;
     border-bottom: 1px dotted $color__link-hover;
 	}

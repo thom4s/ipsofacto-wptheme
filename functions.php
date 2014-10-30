@@ -199,7 +199,7 @@ function getposts( $atts ){
 add_shortcode( 'lister', 'getposts' );
 
 
-
+// Format excerpt for pages
 function custom_excerpt_length( $length ) {
 	return 0;
 }
@@ -209,6 +209,10 @@ function new_excerpt_more( $more ) {
 	return '';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+
+// Remove ToolBar when logged
+show_admin_bar(false);
 
 
 /**

@@ -2,9 +2,15 @@
 @import "layout/sidebar";
 @import "layout/content";
 
+html, 
+body {
+  height: 100%;
+}
+
 #page {
   @include box-sizing;
   width:  $size__site-main;
+  height: 100%;
   margin: auto;
 
   @include up-to(large){
@@ -22,7 +28,12 @@
 
   .site-content {
     @include box-sizing;
+    min-height: 100%;
+    margin-bottom: - $footerheight;
 
+    img {
+      padding: 2% 0 0 3%;
+    }
   }
 
     .entry-header {
@@ -51,4 +62,6 @@
 
   .site-footer {
     @include box-sizing;
+    clear: both;
+    height: $footerheight;
   }

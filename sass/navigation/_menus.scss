@@ -116,16 +116,12 @@
 		text-align: center;
 		@include font-size (1.2);
 		margin: 0;
-		width: 300px;
-		position: relative;
-		float: none;
-		margin: auto;
+		width: 100%;
 	}
 	
 		li {
-			float: left;
-			position: relative;
-			padding: 0 15px;
+			display: inline;
+			padding: 0 3px 0 0;
 			border-right: 1px solid $gray;
 			line-height: 8px;
 			line-height: 0.8rem;
@@ -137,15 +133,13 @@
 
 			&:hover > a {
 				border: none;
+				color: $red;
 			}
 		}
 			a {
-				display: block;
 				text-decoration: none;
-				padding: 5px 15px;
 				color: $gray__dark;
-				
-
+				padding: 0 5px;
 			}
 
 	.current_page_item > a,
