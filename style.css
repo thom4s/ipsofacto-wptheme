@@ -1006,14 +1006,18 @@ a {
     text-decoration: none;
     color: #9c9b9b;
     padding: 0 5px; }
+    .secondary-navigation a[href*="contact"] {
+      background-color: #c20e1a;
+      color: white; }
+      .secondary-navigation a[href*="contact"]:hover {
+        color: white; }
   .secondary-navigation .current_page_item > a,
   .secondary-navigation .current-menu-item > a,
   .secondary-navigation .current_page_ancestor > a {
-    background: #9c1614;
-    color: white; }
-    .secondary-navigation .current_page_item > a:hover,
-    .secondary-navigation .current-menu-item > a:hover,
-    .secondary-navigation .current_page_ancestor > a:hover {
+    color: #c20e1a; }
+    .secondary-navigation .current_page_item > a[href*="contact"],
+    .secondary-navigation .current-menu-item > a[href*="contact"],
+    .secondary-navigation .current_page_ancestor > a[href*="contact"] {
       color: white; }
 
 /* Job Nav */

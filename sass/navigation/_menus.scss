@@ -140,17 +140,25 @@
 				text-decoration: none;
 				color: $gray__dark;
 				padding: 0 5px;
+
+				&[href*="contact"] {
+					background-color: $red;
+					color: $white;
+
+					&:hover {
+						color: $white;
+					}
+				}
 			}
 
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a {
-		background: $red__light;
-		color: $white;
+		color: $red;
 
-		&:hover {
+		&[href*="contact"] {
 			color: $white;
-		}
+		}		
 	}
 
 }
