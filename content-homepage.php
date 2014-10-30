@@ -9,11 +9,11 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header row">
 
-    <div class="thumbnail first l-3col first">
+    <div class="thumbnail first l-3col">
       <?php the_post_thumbnail( ); ?>
     </div>
 
-    <div class="entry-excerpt l-2col last">
+    <div class="entry-excerpt l-2col">
       <?php the_excerpt(); ?>
     </div>
     

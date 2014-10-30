@@ -26,7 +26,8 @@ h3 {
 
 h4 {
   color: $black;
-  @include font-size(1.6);
+  font-family: $font__main;
+  @include font-size(1.4);
 }
 
 .entry-excerpt {

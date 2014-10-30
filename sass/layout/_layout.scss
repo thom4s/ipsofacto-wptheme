@@ -37,12 +37,33 @@ body {
   }
 
     .entry-header {
+      display: table;
       height: 250px;
+      width: 100%;
       background-color: $gray;
+      float: none;
+      margin: 0;
+      padding: 0;
+
+      .thumbnail {
+        display: table-cell;
+        vertical-align: middle;
+        float: none;
+
+        img {
+          margin-left: 3%;
+        }
+      }
+
+      p {
+        margin: 0;
+      }
     }
 
       .entry-excerpt {
-        margin-top: 50px;
+        display: table-cell;
+        vertical-align: middle;
+        float: none !important;
       }
 
     .entry-aside {
@@ -63,5 +84,6 @@ body {
   .site-footer {
     @include box-sizing;
     clear: both;
-    height: $footerheight;
+    padding-top: $footerheight / 2;
+    height: $footerheight ;
   }

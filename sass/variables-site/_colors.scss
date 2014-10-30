@@ -12,7 +12,7 @@ $gray__darker:      rgb(111, 111, 110);
 //REDS
 $red:               rgb(194, 14, 26);
 $red__light:        rgb(156, 22, 20);
-
+$red__arrows:       #E30613;
 
 // OTHERS
 $color__background-body: #fff;
@@ -26,8 +26,8 @@ $color__text-screen: #21759b;
 $color__text-input: #666;
 $color__text-input-focus: #111;
 
-$color__link: $red__light;
-$color__link-visited: $red__light;
+$color__link: $red__arrows;
+$color__link-visited: $red__arrows;
 $color__link-hover: $red;
 
 $color__text-main: $gray__darker;

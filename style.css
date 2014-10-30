@@ -427,11 +427,26 @@ body {
     padding: 2% 0 0 3%; }
 
 .entry-header {
+  display: table;
   height: 250px;
-  background-color: #c5c5c5; }
+  width: 100%;
+  background-color: #c5c5c5;
+  float: none;
+  margin: 0;
+  padding: 0; }
+  .entry-header .thumbnail {
+    display: table-cell;
+    vertical-align: middle;
+    float: none; }
+    .entry-header .thumbnail img {
+      margin-left: 3%; }
+  .entry-header p {
+    margin: 0; }
 
 .entry-excerpt {
-  margin-top: 50px; }
+  display: table-cell;
+  vertical-align: middle;
+  float: none !important; }
 
 .entry-content:not(.gray-col) {
   margin-top: 20px; }
@@ -444,6 +459,7 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   clear: both;
+  padding-top: 25px;
   height: 50px; }
 
 /*--------------------------------------------------------------
@@ -575,8 +591,9 @@ h3 {
 
 h4 {
   color: black;
-  font-size: 16px;
-  font-size: 1.6rem; }
+  font-family: Arial, Hevetica, sans-serif;
+  font-size: 14px;
+  font-size: 1.4rem; }
 
 .entry-excerpt {
   font-family: "Open Sans Condensed", sans-serif;
@@ -705,6 +722,8 @@ dd {
   color: #6f6f6e; }
   .serial-blocks li:nth-child(3n+3) {
     margin-right: 0; }
+  .serial-blocks li h3 {
+    text-align: center; }
 
 .serial-list li {
   width: 48%;
@@ -857,6 +876,21 @@ textarea {
   .wpcf7-form input {
     width: 100%;
     margin-bottom: 10px; }
+  .wpcf7-form input[type=submit] {
+    width: 100px;
+    color: white;
+    background-color: #c20e1a;
+    border: none;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    text-shadow: none;
+    box-shadow: none; }
+    .wpcf7-form input[type=submit]:hover {
+      color: #c20e1a;
+      background-color: white;
+      border: 1px solid #c20e1a; }
 
 /*--------------------------------------------------------------
 5.0 Navigation
@@ -865,10 +899,10 @@ textarea {
 5.1 Links
 --------------------------------------------------------------*/
 a {
-  color: #9c1614;
+  color: #e30613;
   text-decoration: none; }
   a:visited {
-    color: #9c1614; }
+    color: #e30613; }
   a:hover {
     color: #c20e1a;
     border-bottom: 1px dotted #c20e1a; }
