@@ -30,22 +30,23 @@
         <!-- La liste des annonces-->
         <ul class="fleches">
           <?php
+
             if($post->post_parent)
-            $children = wp_list_pages("title_li=&child_of=".$post->post_parent."&echo=0");
+              $children = wp_list_pages("title_li=&child_of=".$post->post_parent."&echo=0");
             else
-            $children = wp_list_pages("title_li=&child_of=".$post->ID."&echo=0");
-            if ($children) { ?>
-            <ul class="fleches">
-            <?php echo $children; ?>
-            </ul>
-            <?php } ?>
+              $children = wp_list_pages("title_li=&child_of=".$post->ID."&echo=0");
+
+            if ($children) { 
+              echo $children;
+            } else {
+              echo 'Aucun poste à pourvoir pour le moment.';
+            } ?>
         </ul>
 
       </div>    
     </div><!-- .entry-aside -->
 
     <div class="entry-content l-3col last">
-
 
       <!-- Afficher la dernière offre ? Ou contenu statique ? -->
 
