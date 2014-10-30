@@ -146,11 +146,41 @@
 	.current-menu-item > a,
 	.current_page_ancestor > a {
 		background: $red__light;
-		color: #fff;
+		color: $white;
+
+		&:hover {
+			color: $white;
+		}
+	}
+
+}
+
+
+/* Job Nav */
+
+.job-list {
+
+	li {
+
+		a {
+			color: $gray__dark;
+
+			&:hover {
+				color: $black;
+				border-color: $black;
+			}
+		}
+
+		&.current_page_item {
+			a {
+				color: $black;
+			}
+		}
 	}
 
 
 }
+
 
 
 

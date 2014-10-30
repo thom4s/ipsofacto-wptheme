@@ -975,7 +975,20 @@ a {
   .secondary-navigation .current-menu-item > a,
   .secondary-navigation .current_page_ancestor > a {
     background: #9c1614;
-    color: #fff; }
+    color: white; }
+    .secondary-navigation .current_page_item > a:hover,
+    .secondary-navigation .current-menu-item > a:hover,
+    .secondary-navigation .current_page_ancestor > a:hover {
+      color: white; }
+
+/* Job Nav */
+.job-list li a {
+  color: #9c9b9b; }
+  .job-list li a:hover {
+    color: black;
+    border-color: black; }
+.job-list li.current_page_item a {
+  color: black; }
 
 /* Small menu */
 .menu-toggle {
