@@ -539,7 +539,7 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
+  color: #6f6f6e;
   font-family: Arial, Hevetica, sans-serif;
   font-size: 13.5px;
   font-size: 1.35rem;
@@ -853,8 +853,7 @@ textarea {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  width: 50%;
-  margin: auto; }
+  width: 75%; }
   .wpcf7-form input {
     width: 100%;
     margin-bottom: 10px; }
