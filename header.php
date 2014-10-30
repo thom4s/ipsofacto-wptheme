@@ -24,8 +24,12 @@
 	<header id="masthead" class="site-header" role="banner">
 		
 		<div class="site-branding">
-			<img src="<?php bloginfo( 'template_directory'); ?>/img/IF_logo.png" class="site-logo">
-			<a href="<?php bloginfo( 'url'); ?>/contact"><img src="<?php bloginfo( 'template_directory'); ?>/img/IF_enveloppe_gris.png" class="site-contact"></a>
+			<a href="<?php bloginfo( 'url'); ?>">
+				<img src="<?php bloginfo( 'template_directory'); ?>/img/IF_logo.png" class="site-logo">
+			</a>
+			<a href="<?php bloginfo( 'url'); ?>/contact" class="site-contact">
+				
+			</a>
 		</div>
 
 

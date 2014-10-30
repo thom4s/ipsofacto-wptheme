@@ -2,6 +2,28 @@
 	float: left;
 }
 
+.site-header {
+	a {
+		color: inherit;
+
+		&:hover {
+			border: none;
+		}
+	}
+}
+
+.site-contact {
+	display: inline-block;
+	width: 25px;
+	height: 15px;
+	background: url('img/IF_enveloppe_gris.png') no-repeat;
+	margin-left:$baselineheight;
+
+	&:hover {
+		background: url('img/IF_enveloppe_rouge.png') no-repeat;
+	}
+}
+
 .main-navigation {
 	display: inline-block;
 	float: left;
@@ -59,7 +81,6 @@
 		}
 
 		&:hover > a {
-			border: none;
 		}
 	}
 	a {

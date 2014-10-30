@@ -408,7 +408,8 @@ and Blueprint http://www.blueprintcss.org/
   -moz-box-sizing: border-box;
   border-bottom: 2px solid #c20e1a;
   width: 100%;
-  float: left; }
+  float: left;
+  padding: 6.66667px 0; }
 
 .site-content {
   /* Acceptable values are border, content, and padding - content is the default W3C model */
@@ -858,6 +859,20 @@ a {
 .site-branding {
   float: left; }
 
+.site-header a {
+  color: inherit; }
+  .site-header a:hover {
+    border: none; }
+
+.site-contact {
+  display: inline-block;
+  width: 25px;
+  height: 15px;
+  background: url("img/IF_enveloppe_gris.png") no-repeat;
+  margin-left: 20px; }
+  .site-contact:hover {
+    background: url("img/IF_enveloppe_rouge.png") no-repeat; }
+
 .main-navigation {
   display: inline-block;
   float: left; }
@@ -889,8 +904,6 @@ a {
     padding: 0 15px;
     border-right: 1px solid #c5c5c5; }
     .main-navigation li:last-child {
-      border: none; }
-    .main-navigation li:hover > a {
       border: none; }
   .main-navigation a {
     display: block;
