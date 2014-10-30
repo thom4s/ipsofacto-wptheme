@@ -7,26 +7,17 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header row">
 
-    <div class="thumbnail first l-3col">
-      <?php the_post_thumbnail( ); ?>
-    </div>
-
-    <div class="entry-excerpt l-2col">
-      <?php the_excerpt(); ?>
-    </div>
-    
-	</header><!-- .entry-header -->
+  <?php get_template_part( 'part', 'entryheader-3-2' ); ?>
 
   <div class="row">
-    <div class="entry-aside l-2col first">
+    <div class="entry-aside l-2col s-5col first">
 
       <?php dynamic_sidebar('sidebar-hp'); ?>
 
     </div><!-- .entry-aside -->
 
-    <div class="entry-content l-3col last">
+    <div class="entry-content l-3col s-5col last">
       
       <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 

@@ -385,10 +385,19 @@ and Blueprint http://www.blueprintcss.org/
     background-color: #f6f6f6; }
   .entry-aside .widget:nth-child(2n) {
     background-color: #c5c5c5; }
+  @media (max-width: 760px) {
+    .entry-aside .widget {
+      margin-bottom: 0; } }
 
 .gray-col {
   background-color: #f6f6f6;
   padding-top: 20px; }
+
+.eh-2-3 p {
+  width: 75%; }
+
+.eh-3-2 p {
+  width: 85%; }
 
 html,
 body {
@@ -438,10 +447,12 @@ body {
     display: table-cell;
     vertical-align: middle;
     float: none; }
-    .entry-header .thumbnail img {
-      margin-left: 3%; }
+  .entry-header img {
+    display: block;
+    margin: auto;
+    padding: 0; }
   .entry-header p {
-    margin: 0; }
+    margin: 0 auto; }
 
 .entry-excerpt {
   display: table-cell;
@@ -720,8 +731,14 @@ dd {
   padding: 20px 15px;
   background-color: #ececec;
   color: #6f6f6e; }
-  .serial-blocks li:nth-child(3n+3) {
-    margin-right: 0; }
+  @media (max-width: 760px) {
+    .serial-blocks li {
+      width: 49%; }
+      .serial-blocks li:nth-child(2n+2) {
+        margin-right: 0; } }
+  @media (min-width: 980px) {
+    .serial-blocks li:nth-child(3n+3) {
+      margin-right: 0; } }
   .serial-blocks li h3 {
     text-align: center; }
 
@@ -732,6 +749,12 @@ dd {
     margin-right: 0; }
   .serial-list li:nth-child(2n+1) {
     clear: both; }
+
+.no-margin-bottom li {
+  margin-bottom: 0; }
+
+p.no-margin-bottom {
+  margin-bottom: 0; }
 
 img {
   height: auto;

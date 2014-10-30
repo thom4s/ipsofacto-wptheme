@@ -49,14 +49,15 @@ body {
         display: table-cell;
         vertical-align: middle;
         float: none;
-
-        img {
-          margin-left: 3%;
-        }
       }
+        img {
+          display: block;
+          margin: auto;
+          padding: 0;
+        }
 
       p {
-        margin: 0;
+        margin: 0 auto;
       }
     }
 

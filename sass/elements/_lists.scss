@@ -66,8 +66,18 @@ dd {
     background-color: $gray__light;
     color:$gray__darker;
 
-    &:nth-child(3n+3){
-      margin-right: 0;
+    @include up-to(medium) {
+      width: 49%;
+
+      &:nth-child(2n+2){
+        margin-right: 0;
+      }
+    }
+
+    @include at-least(large){
+      &:nth-child(3n+3){
+        margin-right: 0;
+      }
     }
 
     h3 {
@@ -92,3 +102,14 @@ dd {
     }
   }
 }
+
+.no-margin-bottom {
+  li {
+    margin-bottom: 0;
+  }
+}
+
+p.no-margin-bottom {
+  margin-bottom: 0;
+}
+

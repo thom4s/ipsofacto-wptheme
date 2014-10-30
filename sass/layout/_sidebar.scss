@@ -20,6 +20,9 @@
       background-color: $gray;
     }
 
+    @include up-to(medium) {
+      margin-bottom: 0;
+    }
 
   }
 
