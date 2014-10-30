@@ -126,7 +126,7 @@ add_action( 'wp_enqueue_scripts', 'ipsofacto_scripts' );
  */
 require get_template_directory() . '/inc/pt-team.php';
 require get_template_directory() . '/inc/pt-job.php';
-require get_template_directory() . '/inc/pt-interventions.php';
+require get_template_directory() . '/inc/pt-missions.php';
 require get_template_directory() . '/inc/pt-publications.php';
 
 /**

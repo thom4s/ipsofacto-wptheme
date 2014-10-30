@@ -2,17 +2,17 @@
 
 
 // Register Custom Post Type
-function intervention_post_type() {
+function mission_post_type() {
 
   $labels = array(
-    'name'                => _x( 'Interventions', 'Post Type General Name', 'ipsofacto' ),
-    'singular_name'       => _x( 'Intervention', 'Post Type Singular Name', 'ipsofacto' ),
-    'menu_name'           => __( 'Interventions', 'ipsofacto' ),
+    'name'                => _x( 'missions', 'Post Type General Name', 'ipsofacto' ),
+    'singular_name'       => _x( 'mission', 'Post Type Singular Name', 'ipsofacto' ),
+    'menu_name'           => __( 'missions', 'ipsofacto' ),
     'parent_item_colon'   => __( 'Parent Item:', 'ipsofacto' ),
-    'all_items'           => __( 'Toutes les Interventions', 'ipsofacto' ),
+    'all_items'           => __( 'Toutes les missions', 'ipsofacto' ),
     'view_item'           => __( 'Voir', 'ipsofacto' ),
-    'add_new_item'        => __( 'Ajouter une Intervention', 'ipsofacto' ),
-    'add_new'             => __( 'Ajouter une Intervention', 'ipsofacto' ),
+    'add_new_item'        => __( 'Ajouter une mission', 'ipsofacto' ),
+    'add_new'             => __( 'Ajouter une mission', 'ipsofacto' ),
     'edit_item'           => __( 'Editer', 'ipsofacto' ),
     'update_item'         => __( 'Mettre à jour', 'ipsofacto' ),
     'search_items'        => __( 'Rechercher', 'ipsofacto' ),
@@ -20,14 +20,14 @@ function intervention_post_type() {
     'not_found_in_trash'  => __( 'Aucun résultat dans la corbeille', 'ipsofacto' ),
   );
   $rewrite = array(
-    'slug'                => 'intervention',
+    'slug'                => 'missions',
     'with_front'          => true,
     'pages'               => true,
     'feeds'               => true,
   );
   $args = array(
-    'label'               => __( 'intervention', 'ipsofacto' ),
-    'description'         => __( 'Interventions Ipso Facto', 'ipsofacto' ),
+    'label'               => __( 'missions', 'ipsofacto' ),
+    'description'         => __( 'Missions Ipso Facto', 'ipsofacto' ),
     'labels'              => $labels,
     'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', ),
     'taxonomies'          => array( ),
@@ -45,9 +45,9 @@ function intervention_post_type() {
     'rewrite'             => $rewrite,
     'capability_type'     => 'page',
   );
-  register_post_type( 'interventions', $args );
+  register_post_type( 'missions', $args );
 
 }
 
 // Hook into the 'init' action
-add_action( 'init', 'intervention_post_type', 0 );
+add_action( 'init', 'mission_post_type', 0 );
