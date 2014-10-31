@@ -53,7 +53,8 @@ and Blueprint http://www.blueprintcss.org/
  * Mixins for the grid to be 
  */
 .row {
-  clear: both; }
+  clear: both;
+  position: relative; }
   .row:before, .row:after {
     content: " ";
     display: table; }
@@ -428,6 +429,13 @@ body {
   .clearfix {
     *zoom: 1; }
 
+.plain-height {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
 #page {
   /* Acceptable values are border, content, and padding - content is the default W3C model */
   box-sizing: border-box;
@@ -498,9 +506,6 @@ body {
     .entry-excerpt {
       float: left;
       padding: 20px 0; } }
-
-.entry-aside {
-  height: 100%; }
 
 .entry-content:not(.gray-col) {
   margin-top: 20px; }
@@ -729,7 +734,9 @@ big {
 
 .footnotes {
   font-size: 12px;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: 20px; }
 
 /*--------------------------------------------------------------
 3.0 Elements

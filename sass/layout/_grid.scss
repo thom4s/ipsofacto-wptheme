@@ -50,6 +50,7 @@ $one_col: (100% - ($size__site-gutter * ($size__site-cols - 1))) / $size__site-c
 
 .row {
     @include clearfix;
+    position: relative;
 
     > :first-child, 
     .row > :first-child { 

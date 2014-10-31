@@ -11,6 +11,14 @@ body {
   @include clearfix;
 }
 
+.plain-height {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 #page {
   @include box-sizing;
   width:  $size__site-main;
@@ -92,7 +100,6 @@ body {
       }
 
     .entry-aside {
-      height: 100%;
     }
 
     .entry-content {

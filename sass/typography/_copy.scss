@@ -72,6 +72,8 @@ big {
 
 .footnotes {
 	@include font-size(1.2);
+	position: absolute;
+	bottom: $baselineheight;
 }
 
 

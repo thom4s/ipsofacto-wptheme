@@ -11,8 +11,8 @@
 
   <div class="row">
 
-    <div class="entry-aside l-2col  s-5col">
-      <div class="widget job-list">
+    <div class="entry-aside l-2col s-5col plain-height">
+      <div class="widget job-list plain-height">
 
         <!-- La liste des annonces-->
         <ul class="fleches">

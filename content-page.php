@@ -12,8 +12,8 @@
 
   <div class="row">
 
-    <div class="entry-aside l-2col s-5col">
-      <div class="widget">
+    <div class="entry-aside l-2col s-5col plain-height">
+      <div class="widget plain-height">
         <?php echo rwmb_meta( 'ipsofacto_wysiwyg' ); ?>   
       </div>
        
