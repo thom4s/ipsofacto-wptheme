@@ -737,10 +737,11 @@ dd {
   color: #6f6f6e; }
   @media (max-width: 760px) {
     .serial-blocks li {
-      width: 49%; }
+      width: 49%;
+      height: auto; }
       .serial-blocks li:nth-child(2n+2) {
         margin-right: 0; } }
-  @media (min-width: 980px) {
+  @media (min-width: 760px) {
     .serial-blocks li:nth-child(3n+3) {
       margin-right: 0; } }
   .serial-blocks li h3 {

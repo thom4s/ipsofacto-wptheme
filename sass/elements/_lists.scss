@@ -68,13 +68,14 @@ dd {
 
     @include up-to(medium) {
       width: 49%;
+      height: auto;
 
       &:nth-child(2n+2){
         margin-right: 0;
       }
     }
 
-    @include at-least(large){
+    @include at-least(medium){
       &:nth-child(3n+3){
         margin-right: 0;
       }

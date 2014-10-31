@@ -12,7 +12,7 @@
 
   <div class="row">
 
-    <div class="entry-aside l-2col">
+    <div class="entry-aside l-2col  s-5col">
       <div class="widget job-list">
 
         <!-- La liste des annonces-->
@@ -34,7 +34,7 @@
       </div>    
     </div><!-- .entry-aside -->
 
-    <div class="entry-content l-3col last">
+    <div class="entry-content l-3col  s-5col last">
 
       <!-- Afficher la dernière offre ? Ou contenu statique ? -->
 
