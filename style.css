@@ -388,7 +388,16 @@ and Blueprint http://www.blueprintcss.org/
   @media (max-width: 760px) {
     .entry-aside .widget {
       margin-bottom: 0;
-      padding: 10px; } }
+      padding: 10px; }
+      .entry-aside .widget:last-child {
+        display: none; } }
+
+.fallback-mobile {
+  display: none; }
+  @media (max-width: 760px) {
+    .fallback-mobile {
+      display: block;
+      margin-top: 40px; } }
 
 .gray-col {
   background-color: #f6f6f6;
@@ -404,6 +413,20 @@ and Blueprint http://www.blueprintcss.org/
 html,
 body {
   height: 100%; }
+
+.clearfix {
+  clear: both; }
+  .clearfix:before, .clearfix:after {
+    content: " ";
+    display: table; }
+  .clearfix:after {
+    display: block;
+    clear: both;
+    height: 1px;
+    margin-top: -1px;
+    visibility: hidden; }
+  .clearfix {
+    *zoom: 1; }
 
 #page {
   /* Acceptable values are border, content, and padding - content is the default W3C model */
@@ -476,8 +499,14 @@ body {
       float: left;
       padding: 20px 0; } }
 
+.entry-aside {
+  height: 100%; }
+
 .entry-content:not(.gray-col) {
   margin-top: 20px; }
+  @media (max-width: 760px) {
+    .entry-content:not(.gray-col) {
+      margin-top: 40px; } }
 .entry-content:not(.plain) {
   padding-left: 30px; }
   @media (max-width: 760px) {
@@ -697,6 +726,10 @@ small {
 
 big {
   font-size: 125%; }
+
+.footnotes {
+  font-size: 12px;
+  font-size: 1.2rem; }
 
 /*--------------------------------------------------------------
 3.0 Elements

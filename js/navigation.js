@@ -32,3 +32,15 @@
 			container.className += ' toggled';
 	};
 } )();
+
+
+jQuery(function($) {
+
+	$homeAsides = $('.homepage aside');
+	$last = $homeAsides.last().css( "background-color", "#F6F6F6" );
+	$clone = $last.clone();
+	$clone.appendTo('.fallback-mobile').show();
+
+	$('.fix-list-place').appendTo('.entry-content');
+
+});

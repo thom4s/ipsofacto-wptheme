@@ -23,9 +23,19 @@
     @include up-to(medium) {
       margin-bottom: 0;
       padding: $baselineheight / 2;
+
+      &:last-child{
+        display: none;
+      }
     }
-
   }
+}
 
+.fallback-mobile {
+  display: none;
 
+  @include up-to(medium){
+    display: block;
+    margin-top: $baselineheight * 2;
+  }
 }

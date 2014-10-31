@@ -7,6 +7,10 @@ body {
   height: 100%;
 }
 
+.clearfix {
+  @include clearfix;
+}
+
 #page {
   @include box-sizing;
   width:  $size__site-main;
@@ -88,13 +92,18 @@ body {
       }
 
     .entry-aside {
-      
+      height: 100%;
     }
 
     .entry-content {
 
       &:not(.gray-col) {
         margin-top: $baselineheight;
+
+        @include up-to(medium){
+          margin-top: $baselineheight * 2;
+        }
+
       }  
 
       &:not(.plain) {

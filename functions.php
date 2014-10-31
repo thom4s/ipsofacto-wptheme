@@ -103,8 +103,6 @@ function ipsofacto_scripts() {
 
 	wp_enqueue_script( 'ipsofacto-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
-	wp_enqueue_script( 'ipsofacto-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
-
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -132,6 +130,7 @@ function getposts( $atts ){
   	'contenu' 		=> '',
   	'format'			=> 'simple',
   	'combien'			=> -1,
+  	'position'		=> '',
   ), $atts );
 
 	$args = array(
@@ -139,6 +138,12 @@ function getposts( $atts ){
 		'posts_per_page'	=> $a['combien'],
 		'order'						=> 'ASC'
 	);
+
+	if($a['position'] == 'fin'){
+		$class = 'fix-list-place';
+	} else {
+		$class = '';
+	}
 
 	// The Query
 	$the_query = new WP_Query( $args );
@@ -149,14 +154,14 @@ function getposts( $atts ){
 		    case 'brute':
 						while ( $the_query->have_posts() ) {
 							$the_query->the_post(); ?>
-						
+							
 								<h4><?php the_title(); ?></h4>
 								<?php the_content(); ?>
 						
 						<?php }
 		        break;
 		    case 'simple':
-		        echo '<ul class="serial-list">';
+		        echo '<ul class="clearfix serial-list '. $class .'">';
 						while ( $the_query->have_posts() ) {
 							$the_query->the_post(); ?>
 						
@@ -169,7 +174,7 @@ function getposts( $atts ){
 						echo '</ul>';
 		        break;		        
 		    case 'blocks':
-		        echo '<ul class="serial-blocks">';
+		        echo '<ul class="clearfix serial-blocks">';
 						while ( $the_query->have_posts() ) {
 							$the_query->the_post(); ?>
 

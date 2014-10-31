@@ -10,7 +10,7 @@
 
   <?php get_template_part( 'part', 'entryheader-3-2' ); ?>
 
-  <div class="row">
+  <div class="row homepage">
     <div class="entry-aside l-2col s-5col first">
 
       <?php dynamic_sidebar('sidebar-hp'); ?>
@@ -24,6 +24,12 @@
       <?php the_content(); ?>
 
     </div><!-- .entry-content -->
+
+
+    <div class="entry-aside fallback-mobile s-5col first">
+
+    </div><!-- .entry-aside -->
+
   </div>
 
 

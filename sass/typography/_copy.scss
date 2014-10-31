@@ -69,3 +69,9 @@ small {
 big {
 	font-size: 125%;
 }
+
+.footnotes {
+	@include font-size(1.2);
+}
+
+
