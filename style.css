@@ -392,7 +392,8 @@ and Blueprint http://www.blueprintcss.org/
 
 .gray-col {
   background-color: #f6f6f6;
-  padding-top: 20px; }
+  padding-top: 20px;
+  padding-right: 20px; }
 
 .eh-2-3 p {
   width: 75%; }
@@ -444,14 +445,25 @@ body {
   float: none;
   margin: 0;
   padding: 0; }
+  @media (max-width: 760px) {
+    .entry-header {
+      display: block;
+      height: auto; } }
   .entry-header .thumbnail {
     display: table-cell;
     vertical-align: middle;
     float: none; }
+    @media (max-width: 760px) {
+      .entry-header .thumbnail {
+        float: left;
+        margin: 20px 0; } }
   .entry-header img {
     display: block;
     margin: auto;
     padding: 0; }
+    @media (max-width: 760px) {
+      .entry-header img {
+        width: 200% !important; } }
   .entry-header p {
     margin: 0 auto; }
 
@@ -459,11 +471,15 @@ body {
   display: table-cell;
   vertical-align: middle;
   float: none !important; }
+  @media (max-width: 760px) {
+    .entry-excerpt {
+      float: left;
+      padding: 20px 0; } }
 
 .entry-content:not(.gray-col) {
   margin-top: 20px; }
 .entry-content:not(.plain) {
-  padding-left: 20px; }
+  padding-left: 30px; }
   @media (max-width: 760px) {
     .entry-content:not(.plain) {
       padding-left: 10px; } }
@@ -617,6 +633,10 @@ h4 {
   font-weight: bold;
   color: white;
   margin-top: 1.4; }
+  @media (max-width: 760px) {
+    .entry-excerpt {
+      font-size: 20px;
+      font-size: 2rem; } }
 
 p {
   margin-bottom: 1.5em; }
@@ -716,11 +736,20 @@ dd {
 
 .serial-blocks, .serial-list {
   list-style: none;
-  margin: 0;
-  padding: 0; }
+  margin: 0 0 20px 0;
+  padding: 0;
+  float: left; }
+  .serial-blocks + p, .serial-list + p {
+    clear: both; }
   .serial-blocks li, .serial-list li {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     float: left; }
+    @media (max-width: 760px) {
+      .serial-blocks li, .serial-list li {
+        width: 95% !important;
+        margin: 10px auto !important;
+        height: auto !important;
+        float: none !important; } }
   .serial-blocks p, .serial-list p {
     margin: 0; }
 
@@ -735,12 +764,6 @@ dd {
   padding: 20px 15px;
   background-color: #ececec;
   color: #6f6f6e; }
-  @media (max-width: 760px) {
-    .serial-blocks li {
-      width: 49%;
-      height: auto; }
-      .serial-blocks li:nth-child(2n+2) {
-        margin-right: 0; } }
   @media (min-width: 760px) {
     .serial-blocks li:nth-child(3n+3) {
       margin-right: 0; } }
@@ -748,12 +771,18 @@ dd {
     text-align: center; }
 
 .serial-list li {
+  /* Acceptable values are border, content, and padding - content is the default W3C model */
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   width: 48%;
-  margin-right: 2%; }
-  .serial-list li:nth-child(2n+2) {
-    margin-right: 0; }
-  .serial-list li:nth-child(2n+1) {
-    clear: both; }
+  margin-right: 4%;
+  padding-right: 5px; }
+  @media (min-width: 760px) {
+    .serial-list li:nth-child(2n+2) {
+      margin-right: 0; }
+    .serial-list li:nth-child(2n+1) {
+      clear: both; } }
 
 .no-margin-bottom li {
   margin-bottom: 0; }
@@ -766,6 +795,9 @@ img {
   /* Make sure images are scaled correctly. */
   max-width: 100%;
   /* Adhere to container width. */ }
+  @media (max-width: 760px) {
+    img {
+      max-width: none; } }
 
 figure {
   margin: 0; }

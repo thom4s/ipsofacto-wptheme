@@ -10,6 +10,10 @@ hr {
 img {
 	height: auto; /* Make sure images are scaled correctly. */
 	max-width: 100%; /* Adhere to container width. */
+
+  @include up-to(medium){
+    max-width: none;
+  }
 }
 
 figure {

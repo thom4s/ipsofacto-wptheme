@@ -36,4 +36,8 @@ h4 {
   font-weight: bold;
   color: $white;
   margin-top: 1.4;
+
+  @include up-to(medium) {
+    @include font-size(2);
+  }
 }

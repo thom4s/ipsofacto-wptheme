@@ -41,12 +41,25 @@ dd {
 
 %serial {
   list-style: none;
-  margin: 0;
+  margin: 0 0 $baselineheight 0;
   padding: 0;
-  
+  float: left;
+
+  & + p {
+    clear: both;
+  }
+
   li {
-    margin-bottom: $baselineheight;
+    margin-bottom: $baselineheight * 1.5;
     float: left;
+
+    @include up-to(medium) {
+      width: 95% !important;
+      margin: $baselineheight / 2 auto !important;
+      height: auto !important;
+      float: none !important;
+    }
+
   }
 
   p {
@@ -66,15 +79,6 @@ dd {
     background-color: $gray__light;
     color:$gray__darker;
 
-    @include up-to(medium) {
-      width: 49%;
-      height: auto;
-
-      &:nth-child(2n+2){
-        margin-right: 0;
-      }
-    }
-
     @include at-least(medium){
       &:nth-child(3n+3){
         margin-right: 0;
@@ -91,15 +95,18 @@ dd {
   @extend %serial;
 
   li {
+    @include box-sizing;
     width: 48%;
-    margin-right: 2%;
+    margin-right: 4%;
+    padding-right: 5px;
 
-    &:nth-child(2n+2){
-      margin-right: 0;
-    }
-    
-    &:nth-child(2n+1) {
-      clear: both;
+    @include at-least(medium) {
+      &:nth-child(2n+2){
+        margin-right: 0;
+      }
+      &:nth-child(2n+1) {
+        clear: both;
+      }
     }
   }
 }

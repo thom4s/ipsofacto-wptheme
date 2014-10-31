@@ -1,6 +1,5 @@
 <?php
 /**
- * The template used for displaying page content in page.php
  *
  * @package ipsofacto
  */
@@ -27,7 +26,7 @@
             if ($children) { 
               echo $children;
             } else {
-              echo 'Aucun poste à pourvoir pour le moment.';
+              echo rwmb_meta( 'ipsofacto_wysiwyg' );  
             } ?>
         </ul>
 

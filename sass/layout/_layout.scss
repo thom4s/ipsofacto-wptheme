@@ -45,15 +45,30 @@ body {
       margin: 0;
       padding: 0;
 
+      @include up-to(medium){
+        display: block;
+        height: auto;
+      }
+
       .thumbnail {
         display: table-cell;
         vertical-align: middle;
         float: none;
+
+        @include up-to (medium){
+          float: left;
+          margin: $baselineheight 0;
+        }
+
       }
         img {
           display: block;
           margin: auto;
           padding: 0;
+
+          @include up-to(medium){
+            width: 200% !important;
+          }
         }
 
       p {
@@ -65,6 +80,11 @@ body {
         display: table-cell;
         vertical-align: middle;
         float: none !important;
+
+        @include up-to(medium){
+          float: left;
+          padding: $baselineheight 0;
+        }
       }
 
     .entry-aside {
@@ -78,7 +98,7 @@ body {
       }  
 
       &:not(.plain) {
-        padding-left: $baselineheight;
+        padding-left: $baselineheight * 1.5;
 
         @include up-to(medium) {
           padding-left: $baselineheight / 2;
