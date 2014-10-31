@@ -54,9 +54,7 @@
 
 		@include up-to(medium) {
 			display: none;
-			width: 100%;
 			margin: auto;
-			float: none;
 		}
 		
 		@include up-to(large) {
@@ -81,10 +79,6 @@
 		}
 
 		@include up-to(medium){
-			width: 50%;
-			border: none;
-			padding: 0;
-			margin: 0;
 		}
 		
 		@include up-to(large){
@@ -103,7 +97,6 @@
 		text-align: center;
 
 		@include up-to(medium){
-			width: auto;
 		}
 		
 		@include up-to(large){

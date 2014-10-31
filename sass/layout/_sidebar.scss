@@ -22,6 +22,7 @@
 
     @include up-to(medium) {
       margin-bottom: 0;
+      padding: $baselineheight / 2;
     }
 
   }

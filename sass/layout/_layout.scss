@@ -79,6 +79,10 @@ body {
 
       &:not(.plain) {
         padding-left: $baselineheight;
+
+        @include up-to(medium) {
+          padding-left: $baselineheight / 2;
+        }
       }
     }    
 

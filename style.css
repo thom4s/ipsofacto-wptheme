@@ -387,7 +387,8 @@ and Blueprint http://www.blueprintcss.org/
     background-color: #c5c5c5; }
   @media (max-width: 760px) {
     .entry-aside .widget {
-      margin-bottom: 0; } }
+      margin-bottom: 0;
+      padding: 10px; } }
 
 .gray-col {
   background-color: #f6f6f6;
@@ -463,6 +464,9 @@ body {
   margin-top: 20px; }
 .entry-content:not(.plain) {
   padding-left: 20px; }
+  @media (max-width: 760px) {
+    .entry-content:not(.plain) {
+      padding-left: 10px; } }
 
 .site-footer {
   /* Acceptable values are border, content, and padding - content is the default W3C model */
@@ -960,9 +964,7 @@ a {
     @media (max-width: 760px) {
       .main-navigation ul {
         display: none;
-        width: 100%;
-        margin: auto;
-        float: none; } }
+        margin: auto; } }
     @media (max-width: 980px) {
       .main-navigation ul {
         width: 100%;
@@ -977,12 +979,6 @@ a {
       border: none; }
     .main-navigation li:hover > a {
       color: #c20e1a; }
-    @media (max-width: 760px) {
-      .main-navigation li {
-        width: 50%;
-        border: none;
-        padding: 0;
-        margin: 0; } }
     @media (max-width: 980px) {
       .main-navigation li {
         width: 50%;
@@ -996,9 +992,6 @@ a {
     padding: 5px 15px;
     color: #9c9b9b;
     text-align: center; }
-    @media (max-width: 760px) {
-      .main-navigation a {
-        width: auto; } }
     @media (max-width: 980px) {
       .main-navigation a {
         width: auto; } }
