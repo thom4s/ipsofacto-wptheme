@@ -181,7 +181,32 @@ function getposts( $atts ){
 							$the_query->the_post(); ?>
 
 							<li class="">
-								<h3><?php the_title(); ?></h3>
+								<h3>
+									<?php 
+										$signesAstro =  get_the_terms( $post->ID, 'signe-astro' );
+										if($signesAstro) {
+											foreach ($signesAstro as $signeAstro) {
+												$tax_term_id = $signeAstro->term_taxonomy_id;
+											 	$images = get_option('taxonomy_image_plugin');
+											 	echo '<span class="astro left">'. wp_get_attachment_image( $images[$tax_term_id], '' ). '</span>';
+											}
+										}
+									?>
+
+									<?php the_title(); ?>
+
+									<?php
+										$signesChinois =  get_the_terms( $post->ID, 'signe-chinois' );
+										if($signesChinois) {
+											foreach ($signesChinois as $signeChinois) {
+												$tax_term_id = $signeChinois->term_taxonomy_id;
+											 	$images = get_option('taxonomy_image_plugin');
+											 	echo '<span class="astro right">'. wp_get_attachment_image( $images[$tax_term_id], '' ). '</span>';
+											}
+										}
+									?>
+
+								</h3>
 								<?php the_content(); ?>
 							</li>
 

@@ -20,9 +20,31 @@ h2 {
 
 h3 {
   @include font-size(1.8);
+  position: relative;
   margin-bottom: $baselineheight;
   color: $black;
 }
+
+.astro {
+  position: absolute;
+  top: -5px;
+  display: inline-block;
+  width: 35px;
+
+  img {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+  .left {
+    left: 0;
+  }
+
+  .right {
+    right: 0;
+  }
+
 
 h4 {
   color: $black;
@@ -41,3 +63,4 @@ h4 {
     @include font-size(2);
   }
 }
+
