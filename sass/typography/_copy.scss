@@ -74,6 +74,10 @@ big {
 	@include font-size(1.2);
 	position: absolute;
 	bottom: $baselineheight;
+	
+	@include up-to(medium){
+		position: relative;
+	}
 }
 
 

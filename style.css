@@ -386,12 +386,13 @@ and Blueprint http://www.blueprintcss.org/
     background-color: #f6f6f6; }
   .entry-aside .widget:nth-child(2n) {
     background-color: #c5c5c5; }
-  @media (max-width: 760px) {
-    .entry-aside .widget {
-      margin-bottom: 0;
-      padding: 10px; }
-      .entry-aside .widget:last-child {
-        display: none; } }
+
+@media (max-width: 760px) {
+  .homepage .widget {
+    margin-bottom: 0;
+    padding: 10px; }
+    .homepage .widget:last-child {
+      display: none; } }
 
 .fallback-mobile {
   display: none; }
@@ -413,7 +414,7 @@ and Blueprint http://www.blueprintcss.org/
 
 html,
 body {
-  height: 100%; }
+  min-height: 100%; }
 
 .clearfix {
   clear: both; }
@@ -435,6 +436,9 @@ body {
   bottom: 0;
   left: 0;
   right: 0; }
+  @media (max-width: 760px) {
+    .plain-height {
+      position: relative; } }
 
 #page {
   /* Acceptable values are border, content, and padding - content is the default W3C model */
@@ -737,6 +741,9 @@ big {
   font-size: 1.2rem;
   position: absolute;
   bottom: 20px; }
+  @media (max-width: 760px) {
+    .footnotes {
+      position: relative; } }
 
 /*--------------------------------------------------------------
 3.0 Elements
@@ -774,23 +781,30 @@ dd {
   .fleches li {
     margin: 0 0 20px 20px; }
 
-.serial-blocks, .serial-list {
+.serial-blocks, .serial-simple {
+  /* Acceptable values are border, content, and padding - content is the default W3C model */
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   list-style: none;
   margin: 0 0 20px 0;
   padding: 0;
-  float: left; }
-  .serial-blocks + p, .serial-list + p {
+  float: left;
+  width: 100%; }
+  .serial-blocks + p, .serial-simple + p {
     clear: both; }
-  .serial-blocks li, .serial-list li {
+  .serial-blocks li, .serial-simple li {
     margin-bottom: 30px;
     float: left; }
     @media (max-width: 760px) {
-      .serial-blocks li, .serial-list li {
+      .serial-blocks li, .serial-simple li {
         width: 95% !important;
         margin: 10px auto !important;
-        height: auto !important;
         float: none !important; } }
-  .serial-blocks p, .serial-list p {
+    @media (max-width: 980px) {
+      .serial-blocks li, .serial-simple li {
+        height: auto !important; } }
+  .serial-blocks p, .serial-simple p {
     margin: 0; }
 
 .serial-blocks li {
@@ -806,11 +820,13 @@ dd {
   color: #6f6f6e; }
   @media (min-width: 760px) {
     .serial-blocks li:nth-child(3n+3) {
-      margin-right: 0; } }
+      margin-right: 0; }
+    .serial-blocks li:nth-child(3n+4) {
+      clear: both; } }
   .serial-blocks li h3 {
     text-align: center; }
 
-.serial-list li {
+.serial-simple li {
   /* Acceptable values are border, content, and padding - content is the default W3C model */
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -819,9 +835,9 @@ dd {
   margin-right: 4%;
   padding-right: 5px; }
   @media (min-width: 760px) {
-    .serial-list li:nth-child(2n+2) {
+    .serial-simple li:nth-child(2n+2) {
       margin-right: 0; }
-    .serial-list li:nth-child(2n+1) {
+    .serial-simple li:nth-child(2n+1) {
       clear: both; } }
 
 .no-margin-bottom li {

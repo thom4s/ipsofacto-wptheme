@@ -160,8 +160,9 @@ function getposts( $atts ){
 						
 						<?php }
 		        break;
+
 		    case 'simple':
-		        echo '<ul class="clearfix serial-list '. $class .'">';
+		        echo '<ul class="clearfix serial-'. $a['format']. ' ' . $class . $a['contenu'] .'">';
 						while ( $the_query->have_posts() ) {
 							$the_query->the_post(); ?>
 						
@@ -172,9 +173,10 @@ function getposts( $atts ){
 						
 						<?php }
 						echo '</ul>';
-		        break;		        
+		        break;
+
 		    case 'blocks':
-		        echo '<ul class="clearfix serial-blocks">';
+		        echo '<ul class="clearfix serial-'. $a['format']. ' ' . $class . ' ' . $a['contenu'] .'">';
 						while ( $the_query->have_posts() ) {
 							$the_query->the_post(); ?>
 

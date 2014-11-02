@@ -19,7 +19,11 @@
     &:nth-child(2n) {
       background-color: $gray;
     }
+  }
+}
 
+.homepage {
+  .widget {
     @include up-to(medium) {
       margin-bottom: 0;
       padding: $baselineheight / 2;
@@ -27,8 +31,9 @@
       &:last-child{
         display: none;
       }
-    }
+    } 
   }
+
 }
 
 .fallback-mobile {

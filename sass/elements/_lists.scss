@@ -40,10 +40,12 @@ dd {
 
 
 %serial {
+  @include box-sizing;
   list-style: none;
   margin: 0 0 $baselineheight 0;
   padding: 0;
   float: left;
+  width: 100%;
 
   & + p {
     clear: both;
@@ -56,8 +58,11 @@ dd {
     @include up-to(medium) {
       width: 95% !important;
       margin: $baselineheight / 2 auto !important;
-      height: auto !important;
       float: none !important;
+    }
+
+    @include up-to(large) {
+      height: auto !important;
     }
 
   }
@@ -83,6 +88,9 @@ dd {
       &:nth-child(3n+3){
         margin-right: 0;
       }
+      &:nth-child(3n+4){
+        clear: both;
+      }
     }
 
     h3 {
@@ -91,7 +99,7 @@ dd {
   }
 }
 
-.serial-list {
+.serial-simple {
   @extend %serial;
 
   li {

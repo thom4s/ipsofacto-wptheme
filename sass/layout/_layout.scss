@@ -4,7 +4,7 @@
 
 html, 
 body {
-  height: 100%;
+  min-height: 100%;
 }
 
 .clearfix {
@@ -17,6 +17,10 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
+
+  @include up-to(medium){
+    position: relative;
+  }
 }
 
 #page {
