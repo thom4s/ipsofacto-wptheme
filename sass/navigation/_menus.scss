@@ -52,16 +52,21 @@
 		margin-top: 30px;
 		padding-left: 0;
 
-		@include up-to(medium) {
-			display: none;
-			margin: auto;
-		}
-		
 		@include up-to(large) {
 			width: 100%;
 			margin: 20px auto;
 			float: none;
-		}		
+		}	
+		
+		@include up-to(medium) {
+			display: none;
+			width: 80%;
+			float: right;
+			margin: auto;
+			@include font-size (1.3);
+		}
+		
+	
 	}
 
 	li {
@@ -209,8 +214,8 @@
 	@include up-to(medium){
 		display: block;
 		margin: 0;
-		float: none;
-		width: 100%;
+		float: right;
+		width: 80%;
 		height: 40px;
 		margin-bottom: $baselineheight;
 	}

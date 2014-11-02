@@ -1066,15 +1066,19 @@ a {
     list-style: none;
     margin-top: 30px;
     padding-left: 0; }
-    @media (max-width: 760px) {
-      .main-navigation ul {
-        display: none;
-        margin: auto; } }
     @media (max-width: 980px) {
       .main-navigation ul {
         width: 100%;
         margin: 20px auto;
         float: none; } }
+    @media (max-width: 760px) {
+      .main-navigation ul {
+        display: none;
+        width: 80%;
+        float: right;
+        margin: auto;
+        font-size: 13px;
+        font-size: 1.3rem; } }
   .main-navigation li {
     float: left;
     position: relative;
@@ -1168,8 +1172,8 @@ a {
     .menu-toggle {
       display: block;
       margin: 0;
-      float: none;
-      width: 100%;
+      float: right;
+      width: 80%;
       height: 40px;
       margin-bottom: 20px; } }
 

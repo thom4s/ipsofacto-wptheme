@@ -5,7 +5,7 @@
         <?php the_post_thumbnail( ); ?>
       </div>
 
-      <div class="entry-excerpt l-3col s-4col">
+      <div class="entry-excerpt l-3col">
         <?php the_excerpt(); ?>
       </div>
 
