@@ -839,11 +839,19 @@ dd {
   .serial-blocks p, .serial-simple p {
     margin: 0; }
 
+.serial-blocks a[href*="mailto:"] {
+  display: inline-block;
+  margin-top: 5px; }
+  @media (min-width: 760px) {
+    .serial-blocks a[href*="mailto:"] {
+      position: absolute;
+      bottom: 10px; } }
 .serial-blocks li {
   /* Acceptable values are border, content, and padding - content is the default W3C model */
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  position: relative;
   width: 32%;
   height: 200px;
   margin-right: 2%;
@@ -851,10 +859,12 @@ dd {
   background-color: #ececec;
   color: #6f6f6e; }
   @media (min-width: 760px) {
-    .serial-blocks li:nth-child(3n+3) {
-      margin-right: 0; }
-    .serial-blocks li:nth-child(3n+4) {
-      clear: both; } }
+    .serial-blocks li {
+      padding-bottom: 40px; }
+      .serial-blocks li:nth-child(3n+3) {
+        margin-right: 0; }
+      .serial-blocks li:nth-child(3n+4) {
+        clear: both; } }
   .serial-blocks li h3 {
     text-align: center; }
 

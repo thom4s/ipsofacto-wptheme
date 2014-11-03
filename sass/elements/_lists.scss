@@ -75,8 +75,19 @@ dd {
 .serial-blocks {
   @extend %serial;
 
+  a[href*="mailto:"] {
+    display: inline-block;
+    margin-top: 5px;
+    
+    @include at-least(medium){
+      position: absolute;
+      bottom: 10px;
+    }
+  }
+
   li {
     @include box-sizing;
+    position: relative;
     width: 32%;
     height: 200px;
     margin-right: 2%;
@@ -85,6 +96,8 @@ dd {
     color:$gray__darker;
 
     @include at-least(medium){
+      padding-bottom: 40px;
+
       &:nth-child(3n+3){
         margin-right: 0;
       }
