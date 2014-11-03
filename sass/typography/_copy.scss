@@ -77,6 +77,8 @@ big {
 	
 	@include up-to(medium){
 		position: relative;
+		display: none;
+		bottom: 0;
 	}
 }
 

@@ -4,6 +4,46 @@
 		"selected_items":
 		[
 			[
+				"margin-",
+				"margin-top"
+			],
+			[
+				"page",
+				"pagekids"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"b",
+				"baselineheight"
+			],
+			[
+				"margi",
+				"margin"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"meta",
+				"meta_boxes"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
 				"create",
 				"createQueryBuilder"
 			],
@@ -18,10 +58,6 @@
 			[
 				"rem",
 				"removeClass"
-			],
-			[
-				"margin",
-				"margin-left"
 			],
 			[
 				"mar",
@@ -56,16 +92,8 @@
 				"margin-bottom"
 			],
 			[
-				"margin-",
-				"margin-left"
-			],
-			[
 				"he",
 				"height"
-			],
-			[
-				"no",
-				"normal"
 			],
 			[
 				"vertica",
@@ -78,10 +106,6 @@
 			[
 				"ri",
 				"right"
-			],
-			[
-				"font-",
-				"font-weight"
 			],
 			[
 				"bo",
@@ -119,6 +143,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "content-sitemap.php",
+			"settings":
+			{
+				"buffer_size": 880,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -164,6 +196,60 @@
 	},
 	"file_history":
 	[
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/content-gray2cols.php",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/part-entry-header.php",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/part-entryheader-3-2.php",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/sass/layout/_layout.scss",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/part-entryheader-2-3.php",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/sass/layout/_grid.scss",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/sass/navigation/_menus.scss",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/sass/elements/_lists.scss",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/functions.php",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/sass/typography/_headings.scss",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/js/navigation.js",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/sass/layout/_sidebar.scss",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/sass/typography/_copy.scss",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/content-page.php",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/content-job.php",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/content-homepage.php",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/t_job.php",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/sass/layout/_content.scss",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/sass/elements/_elements.scss",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/content-gray4cols.php",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/sass/forms/_buttons.scss",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/header.php",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/README.md",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/sass/variables-site/_variables-site.scss",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/404.php",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/content-plain.php",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/sass/mixins/_mixins-master.scss",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/sass/variables-site/_structure.scss",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/content-sideblank.php",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/sass/variables-site/_colors.scss",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/sass/forms/_forms.scss",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/content-sitemap.php",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/t_sitemap.php",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/inc/metaboxes.php",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/inc/pt-missions.php",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/sass/navigation/_navigation.scss",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/sass/navigation/_links.scss",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/t_gray4cols.php",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/t_sideblank.php",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/inc/pt-publications.php",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/sass/typography/_typography.scss",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/t_plain.php",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/t_hp.php",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/sass/layout/_sidebar-content.scss",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/sass/variables-site/_typography.scss",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/sass/site/primary/_posts-and-pages.scss",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/sass/style.scss",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/sidebar-hp.php",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/footer.php",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/inc/pt-job.php",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/inc/pt-team.php",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/page.php",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/style.css",
+		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/sass/layout/_content-sidebar.scss",
 		"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/sass/_reset.scss",
 		"/Users/thomas/Sites/Symfony/src/OC/PlatformBundle/Resources/views/Advert/form.html.twig",
 		"/Users/thomas/Sites/mdlp/wp-content/themes/mdlp_db/vendors/dompdf/include/image_cache.cls.php",
@@ -237,61 +323,7 @@
 		"/Users/thomas/Sites/th/scss/config.scss",
 		"/Users/thomas/Sites/th/db/notes/wpupdate.md",
 		"/Users/thomas/Sites/DEV/th/footer.php",
-		"/Users/thomas/Sites/DEV/th/db/notes/metaboxes.md",
-		"/Users/thomas/Sites/DEV/th/notes.php",
-		"/Users/thomas/Sites/DEV/th/js/scripts.js",
-		"/Users/thomas/Sites/DEV/th/header.php",
-		"/Users/thomas/Sites/DEV/th/scss/partials/_q-typography.scss",
-		"/Users/thomas/Sites/DEV/th/lib/showdown.js",
-		"/Users/thomas/Sites/DEV/th/db/notes.json",
-		"/Users/thomas/Sites/DEV/th/scss/partials/_a-code.scss",
-		"/Users/thomas/Sites/DEV/th/scss/config.scss",
-		"/Users/thomas/Sites/DEV/th/lib/default.css",
-		"/Users/thomas/Sites/DEV/th/scss/base.scss",
-		"/Users/thomas/Sites/DEV/th/scss/vendor/_prism.scss",
-		"/Users/thomas/Sites/DEV/th/db/portfolio.json",
-		"/Users/thomas/Sites/DEV/th/index.php",
-		"/Users/thomas/Sites/DEV/th/db/whoami.json",
-		"/Users/thomas/Sites/DEV/th/references.php",
-		"/Users/thomas/Sites/DEV/th/scss/modules/_picto-styles.scss",
-		"/Users/thomas/Downloads/th-picto/styles.css",
-		"/Users/thomas/Sites/DEV/th/navigation.php",
-		"/Users/thomas/Sites/DEV/th/scss/partials/_a-nav.scss",
-		"/Users/thomas/Sites/DEV/th/scss/partials/_u-base-spacing.scss",
-		"/Users/thomas/Sites/DEV/th/.htaccess",
-		"/Users/thomas/Sites/DEV/th/lib/Markdown.Converter.js",
-		"/Users/thomas/Sites/DEV/th/db/notes/scss.md",
-		"/Users/thomas/Sites/DEV/th/footer-content.php",
-		"/Users/thomas/Sites/DEV/th/scss/partials/_a-breadcrumb.scss",
-		"/Users/thomas/Sites/DEV/th/scss/partials/_a-buttons.scss",
-		"/Users/thomas/Sites/DEV/th/scss/modules/_mixins.scss",
-		"/Users/thomas/Sites/DEV/th/contact.php",
-		"/Users/thomas/Sites/DEV/th/savoir-faire.php",
-		"/Users/thomas/Sites/DEV/th/scss/partials/_q-forms.scss",
-		"/Users/thomas/Sites/DEV/th/db/notes/outils.md",
-		"/Users/thomas/Sites/DEV/th/scss/partials/_a-medias.scss",
-		"/Users/thomas/Sites/DEV/th/db/notes/wpmigration.md",
-		"/Users/thomas/Sites/DEV/th/db/notes/localhost.md",
-		"/Users/thomas/Sites/DEV/th/db/notes/wpupdate.md",
-		"/Users/thomas/Sites/DEV/th/scss/partials/_q-links.scss",
-		"/Users/thomas/Sites/DEV/th/db/notes/tablecontent.md",
-		"/Users/thomas/Sites/DEV/th/db/notes/convertmarkdown.md",
-		"/Users/thomas/Sites/DEV/th/db/notes/direnon.md",
-		"/Users/thomas/Sites/DEV/th/db/notes/environnement.md",
-		"/Users/thomas/Sites/DEV/th/send.php",
-		"/Users/thomas/Sites/DEV/th/scss/modules/_styleguide.scss",
-		"/Users/thomas/Sites/DEV/th/db/skills.json",
-		"/Users/thomas/Sites/DEV/th/scss/modules/_variables.scss",
-		"/Users/thomas/Sites/DEV/th/expertise.php",
-		"/Users/thomas/Sites/DEV/th/sidebar.php",
-		"/Users/thomas/Sites/DEV/th/portfolio.php",
-		"/Users/thomas/Sites/DEV/th/competences.php",
-		"/Users/thomas/Sites/DEV/th/scss/partials/_m-footer-group.scss",
-		"/Users/thomas/Sites/DEV/th/scss/partials/_a-post-content.scss",
-		"/Users/thomas/Sites/DEV/th/notes/tablecontent.md",
-		"/Users/thomas/Sites/DEV/th/scss/partials/_q-lists.scss",
-		"/Users/thomas/Sites/DEV/th/notes/posttype.md",
-		"/Users/thomas/Sites/DEV/th/notes/localhost.md"
+		"/Users/thomas/Sites/DEV/th/db/notes/metaboxes.md"
 	],
 	"find":
 	{
@@ -302,6 +334,9 @@
 		"height": 0.0,
 		"where_history":
 		[
+			"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/sass",
+			"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto",
+			"/Users/thomas/Sites/ipsofacto/wp-content/themes/ipsofacto/sass",
 			"/Users/thomas/Sites/mdlp/wp-content/themes/mdlp_db/vendors/dompdf",
 			"/Users/thomas/Sites/mdlp/wp-content/themes/mdlp_db",
 			"/Users/thomas/Sites/Symfony/src",
@@ -328,6 +363,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"font-size",
+			"button",
+			"oops!",
+			"pdf",
+			"site",
+			".entry-content",
+			"support",
+			"layout",
 			"sys_get_temp_dir",
 			"part-event-item",
 			"hide",
@@ -462,8 +505,126 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "content-sitemap.php",
+					"settings":
+					{
+						"buffer_size": 880,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								878,
+								878
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		},
 		{
@@ -500,7 +661,7 @@
 		"cols":
 		[
 			0.0,
-			0.840044742729,
+			0.914254386681,
 			1.0
 		],
 		"rows":

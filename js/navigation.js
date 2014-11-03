@@ -41,6 +41,10 @@ jQuery(function($) {
 	$clone = $last.clone();
 	$clone.appendTo('.fallback-mobile').show();
 
+	$footnotes = $('.footnotes').clone().appendTo('.fallback-mobile').show();
+
+
 	$('.fix-list-place').appendTo('.entry-content');
+
 
 });

@@ -25,6 +25,11 @@
       <?php the_content(); ?>
     </div><!-- .entry-content -->
   
+  
+    <div class="entry-aside fallback-mobile s-5col first">
+
+    </div><!-- .entry-aside -->
+
   </div><!-- .row -->
 
 </article><!-- #post-## -->

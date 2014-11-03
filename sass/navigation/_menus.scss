@@ -218,8 +218,18 @@
 		width: 80%;
 		height: 40px;
 		margin-bottom: $baselineheight;
-	}
 
+		background-image: url('img/arrows.png');
+		background-repeat: no-repeat;
+		background-position: 10px 10px;
+
+	}
+}
+
+.toggled {
+	.menu-toggle {
+		background-position: 10px -25px;
+	}
 }
 
 @media screen and (max-width: $medium_breakpoint) {

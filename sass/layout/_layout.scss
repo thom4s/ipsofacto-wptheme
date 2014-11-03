@@ -26,7 +26,7 @@ body {
 #page {
   @include box-sizing;
   width:  $size__site-main;
-  height: 100%;
+  min-height: 100%;
   margin: auto;
 
   @include up-to(large){
@@ -45,7 +45,7 @@ body {
   .site-content {
     @include box-sizing;
     min-height: 100%;
-    margin-bottom: - $footerheight;
+    margin-bottom: - $footerheight / 2;
 
     img {
       padding: 2% 0 0 3%;
@@ -83,7 +83,7 @@ body {
           padding: 0;
 
           @include up-to(medium){
-            width: 200% !important;
+            width: 115% !important;
           }
         }
 
@@ -107,6 +107,7 @@ body {
     }
 
     .entry-content {
+      z-index: 20;
 
       &:not(.gray-col) {
         margin-top: $baselineheight;
@@ -114,7 +115,6 @@ body {
         @include up-to(medium){
           margin-top: $baselineheight * 2;
         }
-
       }  
 
       &:not(.plain) {
@@ -128,7 +128,12 @@ body {
 
   .site-footer {
     @include box-sizing;
+    z-index: 999;
     clear: both;
     padding-top: $footerheight / 2;
     height: $footerheight ;
+    
+    @include up-to(medium){
+      padding: $footerheight 0 $footerheight / 2 0;
+    }
   }

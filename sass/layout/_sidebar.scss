@@ -33,13 +33,21 @@
       }
     } 
   }
+}
 
+.fix-align {
+  margin-top: 50px;
+  @include up-to(medium){
+    margin-top: 0;
+  }
 }
 
 .fallback-mobile {
   display: none;
 
   @include up-to(medium){
+    background-color: $gray__light;
+    padding: 10px;
     display: block;
     margin-top: $baselineheight * 2;
   }
